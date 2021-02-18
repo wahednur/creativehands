@@ -29,6 +29,14 @@ Tags: WS, Wahed Nur, Boilerplate, HTML5, CSS,
   text-align: center;
 }
 
+.cateory-slider-section .item .cat-card {
+  font-family: "Bree Serif", serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #C0809B;
+  text-align: center;
+}
+
 /* Global variable section end */
 body {
   font-family: "Bree Serif", serif;
@@ -235,7 +243,7 @@ svg.svg-inline--fa.fa-shopping-basket.fa-w-18, svg.svg-inline--fa.fa-user.fa-w-1
 /* Nav CSS end*/
 /* Footer CSS start */
 footer {
-  margin-top: 60px;
+  margin-top: 20px;
   width: 100%;
   background-color: #D2A9AF;
   float: left;
@@ -324,169 +332,71 @@ h4.footer-title {
   padding: 10px;
 }
 
-.cat-grid {
-  display: grid;
-  grid-column-gap: 65px;
-  grid-row-gap: 11px;
+.cateory-slider-section {
   width: 100%;
-  margin: 0 auto;
-  grid-template-columns: repeat(auto-fit, minmax(172px, 1fr));
+  float: left;
+  margin-top: 20px;
+  padding-top: 10px;
 }
 
-.cat-grid li {
+.cateory-slider-section .item .cat-card {
   width: 100%;
+  padding: 0 15px;
 }
 
-.cat-grid li .category-body {
+.cateory-slider-section .item .card {
   position: relative;
 }
 
-.cat-grid li .category-body .img-body {
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.cat-grid li .category-body .home-category-content {
+.cateory-slider-section .item .card-body {
   position: absolute;
-  bottom: 1.8em;
-  left: 0;
-  text-align: center;
-  left: 1em;
-  right: 1em;
+  bottom: 20px;
+  align-items: center;
+  width: 100%;
 }
 
-.cat-grid li .category-body .home-category-content a h2.home-cat-title {
-  padding: 5px 10px;
+.cateory-slider-section .item .card-body a {
+  color: #C0809B;
+}
+
+.cateory-slider-section .item .card-body a h5 {
+  width: 100%;
   text-align: center;
-  background-color: #ffffff;
+  background-color: #ffffffba;
+  padding: 10px;
   font-size: .9em;
-  text-transform: uppercase;
+  transition: background .3s;
 }
 
-@media (min-width: 1200px) {
-  .container {
-    width: 1140px !important;
-  }
-  .cat-grid {
-    display: grid;
-    grid-column-gap: 65px;
-    grid-row-gap: 11px;
-    width: 100%;
-    margin: 0 auto;
-    grid-template-columns: repeat(auto-fit, minmax(172px, 1fr)) !important;
-  }
-  .cat-grid li {
-    width: auto;
-  }
+.cateory-slider-section .item .card-body a :hover {
+  background-color: #ffffff;
 }
 
-@media (max-width: 1025px) {
-  .container {
-    width: 1024px;
-  }
-  .cat-grid {
-    display: grid;
-    grid-column-gap: 65px;
-    grid-row-gap: 11px;
-    width: 100%;
-    margin: 0 auto;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  }
-  li {
-    width: auto;
-  }
+.owl-prev, .owl-next {
+  line-height: 30px;
+  min-width: 30px;
+  min-height: 30px;
 }
 
-@media (min-width: 1025px) {
-  .container {
-    width: 1024px;
-  }
-  .cat-grid {
-    display: grid;
-    grid-column-gap: 65px;
-    grid-row-gap: 11px;
-    width: 100%;
-    margin: 0 auto;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)) !important;
-  }
-  li {
-    width: auto;
-  }
+.owl-prev:hover, .owl-next:hover {
+  background-color: #D2A9AF !important;
+  border-radius: 30px !important;
 }
 
-@media (min-width: 992px) {
-  .cat-grid {
-    display: grid;
-    grid-column-gap: 65px;
-    grid-row-gap: 11px;
-    width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  }
-  li {
-    width: auto;
-  }
+button.owl-prev {
+  position: absolute;
+  left: 0;
+  top: 40%;
 }
 
-@media (min-width: 768px) {
-  .cat-grid {
-    display: grid;
-    grid-column-gap: 65px;
-    grid-row-gap: 11px;
-    width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(2, 1fr));
-  }
-  li {
-    width: auto;
-  }
+button.owl-next {
+  position: absolute;
+  left: auto;
+  top: 40%;
+  right: 0;
 }
 
-@media (max-width: 767px) {
-  .cat-grid {
-    display: grid;
-    grid-column-gap: 65px;
-    grid-row-gap: 11px;
-    width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(2, 1fr));
-  }
-  li {
-    width: auto;
-  }
-}
-
-@media (max-width: 412px) {
-  .container {
-    width: 375px;
-  }
-  .cat-grid {
-    display: grid;
-    grid-column-gap: 30px;
-    grid-row-gap: 11px;
-    width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
-  }
-  li {
-    width: auto;
-  }
-}
-
-@media (max-width: 320px) {
-  .container {
-    width: 300px;
-  }
-  .cat-grid {
-    display: grid;
-    grid-column-gap: 30px;
-    grid-row-gap: 11px;
-    width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
-  }
-  li {
-    width: auto;
-  }
-}
-
+/* Product categegory end */
 /* Product card section CSS start */
 .product-group {
   margin: 0 auto;
@@ -631,6 +541,12 @@ h4.footer-title {
 /* ------ New Products section css start --------- */
 section.new-product-section {
   margin-top: 30px;
+}
+
+.new-product-section {
+  display: block;
+  float: left;
+  width: 100%;
 }
 
 /* ---- Product grid responsive --- */

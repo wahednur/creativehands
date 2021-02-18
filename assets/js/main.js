@@ -4,14 +4,14 @@ $('.owl-carousel').owlCarousel({
     nav:true,
     autoplay:true,
     loop:true,
-    nav:false,
     navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>'],
+    dots:false,
     responsive:{
         0:{
             items:2
         },
         768:{
-            items:4
+            items:3
         },
         992:{
             items:4

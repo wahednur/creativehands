@@ -336,7 +336,7 @@ svg.svg-inline--fa.fa-shopping-basket.fa-w-18, svg.svg-inline--fa.fa-user.fa-w-1
 
 /* Footer CSS start */
 footer{
-  margin-top: $div-mt;
+  margin-top: 20px;
   width: 100%;
   background-color: $primaryColor;
   float: left;
@@ -425,170 +425,69 @@ h4.footer-title{
   margin-top: 20px;
   padding: 10px;
 }
-.cat-grid{
-  display: grid;
-  grid-column-gap: 65px;
-  grid-row-gap: 11px;
+.cateory-slider-section{
   width: 100%;
-  margin: 0 auto;
-  grid-template-columns: repeat(auto-fit, minmax(172px, 1fr));
-  li{
-    width: 100%;
-    .category-body{
-    // width: 172px;
-    position: relative;
-    .img-body{
+  float: left;
+  margin-top: 20px;
+  padding-top: 10px;
+
+  .item{
+    .cat-card {
       width: 100%;
-      height: 100%;
-      border-radius: 5px;
-      overflow: hidden;
-  
+      padding: 0 15px;
+      @extend %categoryHeading;
     }
-    .home-category-content{
+    .card {
+      position: relative;
+    }
+    .card-body{
       position: absolute;
-      bottom: 1.8em;
-      left: 0;
-      text-align: center;
-      
-      left: 1em;
-      right: 1em;
+      bottom: 20px;
+      align-items: center;
+      width: 100%;
       a{
-        h2.home-cat-title{
-          padding: 5px 10px;
-          text-align: center;
-          background-color: #ffffff;
-          font-size: .9em;
-          text-transform: uppercase;
-        }
-        }
+        color: $cartColor;
+      h5{
+        width: 100%;
+        text-align: center;
+        background-color: #ffffffba;
+        padding: 10px;
+        font-size: .9em;
+        transition: background .3s;
+      }
+      :hover {
+        background-color: #ffffff;
+      }
+    }
     }
   }
-  }
+
+
+}
+.owl-prev, .owl-next{
+  line-height: 30px;
+  min-width: 30px;
+  min-height: 30px;
   
 }
-@media (min-width:1200px) {
-.container {
-  width: 1140px !important;
+.owl-prev:hover, .owl-next:hover{
+  background-color: $primaryColor !important;
+  border-radius: 30px !important;
 }
-.cat-grid{
-  display: grid;
-  grid-column-gap: 65px;
-  grid-row-gap: 11px;
-  width: 100%;
-  margin: 0 auto;
-  grid-template-columns: repeat(auto-fit, minmax(172px, 1fr)) !important;
-  li{
-    width: auto;
-  }
-  }
+button.owl-prev {
+    position: absolute;
+    left: 0;
+    top: 40%;
 }
-@media (max-width: 1025px) {
-  .container {
-  width: 1024px;
-}
-  .cat-grid{
-  display: grid;
-  grid-column-gap: 65px;
-  grid-row-gap: 11px;
-  width: 100%;
-  margin: 0 auto;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  }
-  li{
-    width: auto;
-  }
+button.owl-next {
+    position: absolute;
+    left: auto;
+    top: 40%;
+    right: 0;
 }
 
-@media (min-width: 1025px) {
-  .container {
-  width: 1024px;
-}
-  .cat-grid{
-  display: grid;
-  grid-column-gap: 65px;
-  grid-row-gap: 11px;
-  width: 100%;
-  margin: 0 auto;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)) !important;
-  }
-  li{
-    width: auto;
-  }
-}
-@media (min-width: 992px) {
 
-  .cat-grid{
-    display: grid;
-    grid-column-gap: 65px;
-    grid-row-gap: 11px;
-    width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  }
-  li{
-    width: auto;
-  }
-}
-
-@media (min-width: 768px) {
-
-  .cat-grid{
-    display: grid;
-    grid-column-gap: 65px;
-    grid-row-gap: 11px;
-    width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(2,1fr));
-  }
-  li{
-    width: auto;
-  }
-}
-@media (max-width: 767px) {
-
-  .cat-grid{
-    display: grid;
-    grid-column-gap: 65px;
-    grid-row-gap: 11px;
-    width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(2,1fr));
-  }
-  li{
-    width: auto;
-  }
-}
-
-@media (max-width: 412px) {
-  .container{
-    width: 375px;
-  }
-
-  .cat-grid{
-    display: grid;
-    grid-column-gap: 30px;
-    grid-row-gap: 11px;
-    width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(135px,1fr));
-  }
-  li{
-    width: auto;
-  }
-}
-
-@media (max-width: 320px) {
-  .container{
-    width: 300px;
-  }
-
-  .cat-grid{
-    display: grid;
-    grid-column-gap: 30px;
-    grid-row-gap: 11px;
-    width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(135px,1fr));
-  }
-  li{
-    width: auto;
-  }
-}
+/* Product categegory end */
 
 /* Product card section CSS start */
 
@@ -739,10 +638,13 @@ h4.footer-title{
 /* ------ New Products section css start --------- */
 section.new-product-section {
     margin-top: 30px;
+    
 }
 
 .new-product-section{
-
+  display: block;
+  float: left;
+  width: 100%;
 }
 /* ---- Product grid responsive --- */
 
