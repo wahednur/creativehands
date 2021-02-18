@@ -12,6 +12,23 @@ Tags: WS, Wahed Nur, Boilerplate, HTML5, CSS,
 */
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
 /* Global variable section start */
+.heading-title {
+  padding: 11px 9px 9px 9px;
+  background-color: transparent;
+  background-image: radial-gradient(at center center, #D2A9AF 0%, rgba(194, 173, 173, 0.04) 68%);
+  width: 100%;
+}
+
+.heading-title h2 {
+  color: #FFFFFF;
+  font-family: "Bree Serif", Sans-serif;
+  font-size: 2.1em;
+  font-weight: 300;
+  letter-spacing: 1.4px;
+  text-shadow: 10px 7px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
 /* Global variable section end */
 body {
   font-family: "Bree Serif", serif;
@@ -329,7 +346,7 @@ h4.footer-title {
 
 @media (min-width: 1200px) {
   .container {
-    width: 1140px;
+    width: 1140px !important;
   }
   .cat-grid {
     display: grid;
@@ -449,6 +466,95 @@ h4.footer-title {
   }
 }
 
+/* Product card section CSS start */
+.product-group {
+  margin: 0 auto;
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 11px;
+  width: 100%;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.product-card {
+  padding: 5px;
+  border: 1px solid #D2A9AF;
+  box-shadow: -1px 10px 10px 0px black;
+  max-height: 350px;
+  text-align: center;
+}
+
+.product-card .card-content {
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.product-card .card-content a h2.product-title {
+  font-family: "Bree Serif", Sans-serif;
+  font-weight: 200;
+  height: 30px;
+  margin-top: 10px;
+  font-size: 1em;
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin-bottom: 1em;
+}
+
+.product-card .card-content .rating {
+  text-align: center;
+  font-size: 1em;
+  margin-bottom: 1.2em;
+  margin-left: auto;
+  margin-right: auto;
+  color: #D2A9AF;
+}
+
+.product-card .card-content .price-group {
+  margin-bottom: .5em;
+}
+
+.product-card .card-content .price-group .price-amount {
+  font-size: .9em;
+  margin-bottom: .5em;
+  font-size: .9em;
+}
+
+.product-card .card-content .price-group ins {
+  text-decoration: none;
+}
+
+.product-card .card-content .price-group ins span.price-amount {
+  color: #6C2D2D !important;
+}
+
+.product-card .card-content a.add-to-cart-btn {
+  color: #FFFFFF;
+  background-color: #D2A9AF;
+  border-color: #D2A9AF;
+  font-family: "Bree Serif", Sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 1.1px;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-radius: 5px 5px 5px 5px;
+  padding: 1em 1em 1em 1em;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
+/* Product card section CSS end */
 /* Home category css end */
+/* ------ Heading title CSS start --------- */
+.heading-title {
+  margin-bottom: .7em;
+}
+
+/* ------ Heading title CSS end --------- */
+/* ------ New Products section css start --------- */
+/* ------ New Products section css end --------- */
 /* ------------ Home page css End -------------- */
 /*# sourceMappingURL=style.css.map */
