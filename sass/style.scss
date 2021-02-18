@@ -183,7 +183,6 @@ html, body {
   width: 100%;
   padding: auto;
   margin: auto;
-  max-height: 100vh;
   background-color: transparent;
   background-repeat: no-repeat;
   background-image: radial-gradient(at center center, #D2A9AF 0%, rgba(194, 173, 173, 0.04) 68%);
@@ -327,7 +326,10 @@ footer{
   width: 100%;
   background-color: $primaryColor;
   float: left;
+  display: block;
   .footer-section{
+    float: left;
+    display: block;
     hr{
       color: #ffffff;
     }
@@ -580,10 +582,9 @@ h4.footer-title{
   margin: 0 auto;
   display: grid;
   grid-column-gap: 20px;
-  grid-row-gap: 11px;
+  grid-row-gap: 40px;
   width: 100%;
   grid-template-columns: repeat(7,1fr);
-
 }
 .product-card{
   padding: 5px;
@@ -679,6 +680,55 @@ h4.footer-title{
 /* ------ Heading title CSS end --------- */
 
 /* ------ New Products section css start --------- */
+section.new-product-section {
+    margin-top: 30px;
+}
 
+.new-product-section{
+
+}
+/* ---- Product grid responsive --- */
+
+@media (min-width: 1025px) {
+  .container {
+  width: 1024px;
+}
+  .product-group{
+    grid-template-columns: repeat(7,1fr) !important;
+}
+.product-card .card-content .price-group {
+       font-size: .7em;
+}
+}
+@media (min-width: 922px) {
+
+  .product-group{
+    grid-template-columns: repeat(3,1fr);
+}
+.product-card .card-content .price-group {
+       font-size: .7em;
+}
+}
+@media (min-width: 768px) {
+
+  .product-group{
+    grid-template-columns: repeat(3,1fr);
+}
+.product-card .card-content .price-group {
+       font-size: .7em;
+}
+}
+@media (max-width: 500px) {
+  .container{
+    max-width: 480px;
+  }
+
+  .product-group{
+    grid-template-columns: repeat(2,1fr);
+}
+.product-card .card-content .price-group {
+       font-size: .7em;
+}
+}
 /* ------ New Products section css end --------- */
 /* ------------ Home page css End -------------- */
