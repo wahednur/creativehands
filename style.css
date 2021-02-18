@@ -84,6 +84,22 @@ html, body {
   background-position: center center;
 }
 
+a.show-more-btn {
+  padding: 5px 14px;
+  float: right;
+  background: #D2A9AF;
+  border-radius: 5px;
+  margin-top: 20px;
+  color: #ffffff;
+  border: 2px solid #D2A9AF;
+}
+
+a.show-more-btn:hover {
+  background-color: #ffffff;
+  color: #D2A9AF;
+  transition: all .3s;
+}
+
 /* Nav CSS start*/
 .price {
   color: rgba(245, 245, 245, 0.897) !important;
@@ -479,6 +495,7 @@ h4.footer-title {
   grid-row-gap: 40px;
   width: 100%;
   grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 20px;
 }
 
 .product-card {
@@ -557,6 +574,12 @@ h4.footer-title {
   font-weight: 300;
   letter-spacing: 1.1px;
   margin-top: 22px;
+}
+
+.product-card .card-content .cart-btn a.add-to-cart-btn:hover {
+  background-color: #ffffff;
+  color: #D2A9AF;
+  transition: all .3s;
 }
 
 /* Product card section CSS end */
