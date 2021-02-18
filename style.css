@@ -543,7 +543,7 @@ section.new-product-section {
   margin-top: 30px;
 }
 
-.new-product-section {
+.new-product-section, .featured-product-section, .limited-offer-section {
   display: block;
   float: left;
   width: 100%;
@@ -580,9 +580,57 @@ section.new-product-section {
   }
 }
 
+@media (max-width: 767px) {
+  .container {
+    width: 740px;
+  }
+  .product-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .product-card .card-content .price-group {
+    font-size: .7em;
+  }
+}
+
 @media (max-width: 500px) {
   .container {
-    max-width: 480px;
+    max-width: 470px;
+  }
+  .product-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .product-card .card-content .price-group {
+    font-size: .7em;
+  }
+}
+
+@media (max-width: 412px) {
+  .container {
+    max-width: 388px;
+  }
+  .product-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .product-card .card-content .price-group {
+    font-size: .7em;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    max-width: 351px;
+  }
+  .product-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .product-card .card-content .price-group {
+    font-size: .7em;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    max-width: 300px;
   }
   .product-group {
     grid-template-columns: repeat(2, 1fr);
