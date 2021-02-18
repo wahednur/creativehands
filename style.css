@@ -108,6 +108,49 @@ a.show-more-btn:hover {
   transition: all .3s;
 }
 
+/* ---- Mini cart summary section start ---- */
+.cart-info {
+  width: 350px;
+  height: 100vh;
+  float: right;
+  padding: 0px 30px;
+}
+
+.cart-info .close {
+  width: 100%;
+  display: block;
+  text-align: right;
+  height: 40px;
+  float: right;
+}
+
+.cart-info .cart-info-itmes {
+  display: flex;
+  width: 100%;
+}
+
+.cart-info .cart-info-itmes .cart-info-img {
+  flex: 2;
+  margin-right: 20px;
+}
+
+.cart-info .cart-info-itmes .cart-info-content {
+  flex: 4;
+}
+
+.cart-info .cart-info-itmes .cart-info-item-remove {
+  flex: 1;
+  position: relative;
+}
+
+.cart-info .cart-info-itmes .cart-info-item-remove .fa-times {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* ---- Mini cart summary section end ---- */
+/* Global css end */
 /* Nav CSS start*/
 .price {
   color: rgba(245, 245, 245, 0.897) !important;
