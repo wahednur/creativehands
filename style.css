@@ -132,7 +132,7 @@ a.show-more-btn:hover {
   transition: all .3s ease-in-out;
 }
 
-.cart-info-base .close {
+.cart-info-base .close-btn {
   width: 100%;
   display: block;
   text-align: right;
@@ -141,6 +141,7 @@ a.show-more-btn:hover {
   font-size: 25px;
   font-weight: 100;
   margin: 25px 0px;
+  cursor: pointer;
 }
 
 .cart-info-base .card-info-wrap .cart-info-itmes {

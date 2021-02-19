@@ -211,6 +211,8 @@ a.show-more-btn:hover{
   width: 350px !important;
   right: 0 !important;
   top: 0;
+  
+  
 }
 .cart-info-base{
   width: 0;
@@ -223,8 +225,10 @@ a.show-more-btn:hover{
   z-index: 2;
   overflow: hidden;
   transition: all .3s ease-in-out;
+  
+  
 
-  .close{
+  .close-btn{
     width: 100%;
     display: block;
     text-align: right;
@@ -233,6 +237,7 @@ a.show-more-btn:hover{
     font-size: 25px;
     font-weight: 100;
     margin: 25px 0px;
+    cursor: pointer;
 
   }
   .card-info-wrap{

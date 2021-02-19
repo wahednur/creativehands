@@ -1,3 +1,5 @@
+
+
 /* Category carousel start */
 $('.owl-carousel').owlCarousel({
     
@@ -26,10 +28,24 @@ $('.owl-carousel').owlCarousel({
 /* Show cart start */
 $(function() {
     const cartInfo = document.getElementById("cart-info");
-    const cart =document.getElementById("cart-info-base");
+    const cart = document.getElementById("cart-info-base");
+    const closeBtn = document.getElementById("close-btn")
+    const closeDiv = document.getElementById("cart-info-base")
 
     cartInfo.addEventListener("click", function(){
         cart.classList.toggle("cart-info-base-view");
+        
+        
+        
     });
+
+    closeBtn.addEventListener("click", function(){
+        closeDiv.classList.toggle("cart-info-base");
+        document.getElementById("cart-info-base").style.display = "none";
+        
+    });
+
+
 })();
+
 /* Show cart end */
