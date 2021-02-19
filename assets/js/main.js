@@ -1,3 +1,4 @@
+/* Category carousel start */
 $('.owl-carousel').owlCarousel({
     
     margin:10,
@@ -20,4 +21,15 @@ $('.owl-carousel').owlCarousel({
             items:5
         }
     }
-})
+}) /* Category carousel end */
+
+/* Show cart start */
+$(function() {
+    const cartInfo = document.getElementById("cart-info");
+    const cart =document.getElementById("cart-info-base");
+
+    cartInfo.addEventListener("click", function(){
+        cart.classList.toggle("cart-info-base-view");
+    });
+})();
+/* Show cart end */
