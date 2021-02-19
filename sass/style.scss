@@ -216,16 +216,31 @@ a.show-more-btn:hover{
     text-align: right;
     height: 40px;
     float: right;
+    font-size: 25px;
+    font-weight: 100;
+    margin: 25px 0px;
+
   }
-  .cart-info-itmes{
+  .card-info-wrap{
+    .cart-info-itmes{
     display: flex;
     width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
     .cart-info-img {
       flex: 2;
       margin-right: 20px;
     }
     .cart-info-content{
       flex: 4;
+      span.qty-price span{
+        color: $footerHeadingColor !important;
+      }
+      dl{
+        dd {
+          text-align: center;
+        }
+      }
     }
     .cart-info-item-remove{
       flex: 1;
@@ -234,10 +249,67 @@ a.show-more-btn:hover{
         position: absolute;
         right: 0;
         bottom: 0;
+        border: 1px solid #d4d4d4;
+        min-height: 22px;
+        min-width: 22px;
+        font-size: 20px !important;
+        padding: 5px;
+        font-weight: 100;
+        border-radius: 22px;
+        color: #d4d4d4;
+        
       }
     }
+    
   }
+  .border-bt{
+    border: 1px solid $cartColor;
+    border-top: 0px ;
+    border-left: 0px;
+    border-right: 0px;
+    
+  }
+
+  }
+  .card-info-wrap .border-bt:last-child{
+    border-bottom: 1px solid #d4d4d4 !important;
+    margin-bottom: 0px;
+    
+  }
+  .cart-info-price{
+    display: inline-block;
+    padding: 20px 0px;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid $cartColor;
+    font-size: 20px;
+  }
+  .cart-info-button{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    .info-btn{
+      font-size: 16px;
+      padding: 15px 30px;
+      flex-basis: 49%;
+      background-color: $primaryColor;
+      color: #ffffff;
+      border: 1px solid $primaryColor;
+      box-shadow: 0px 0px 10px 0px rgba($color: #000000, $alpha: .5);
+      transition: all .3s;
+    }
+    :hover{
+      background-color: #ffffff;
+      color: $primaryColor;
+      border-radius: 5px;
+    }
+  }
+  
+  
 }
+
+
+
 /* ---- Mini cart summary section end ---- */
 
 /* Global css end */

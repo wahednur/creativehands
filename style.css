@@ -122,31 +122,96 @@ a.show-more-btn:hover {
   text-align: right;
   height: 40px;
   float: right;
+  font-size: 25px;
+  font-weight: 100;
+  margin: 25px 0px;
 }
 
-.cart-info .cart-info-itmes {
+.cart-info .card-info-wrap .cart-info-itmes {
   display: flex;
   width: 100%;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
-.cart-info .cart-info-itmes .cart-info-img {
+.cart-info .card-info-wrap .cart-info-itmes .cart-info-img {
   flex: 2;
   margin-right: 20px;
 }
 
-.cart-info .cart-info-itmes .cart-info-content {
+.cart-info .card-info-wrap .cart-info-itmes .cart-info-content {
   flex: 4;
 }
 
-.cart-info .cart-info-itmes .cart-info-item-remove {
+.cart-info .card-info-wrap .cart-info-itmes .cart-info-content span.qty-price span {
+  color: #AE8395 !important;
+}
+
+.cart-info .card-info-wrap .cart-info-itmes .cart-info-content dl dd {
+  text-align: center;
+}
+
+.cart-info .card-info-wrap .cart-info-itmes .cart-info-item-remove {
   flex: 1;
   position: relative;
 }
 
-.cart-info .cart-info-itmes .cart-info-item-remove .fa-times {
+.cart-info .card-info-wrap .cart-info-itmes .cart-info-item-remove .fa-times {
   position: absolute;
   right: 0;
   bottom: 0;
+  border: 1px solid #d4d4d4;
+  min-height: 22px;
+  min-width: 22px;
+  font-size: 20px !important;
+  padding: 5px;
+  font-weight: 100;
+  border-radius: 22px;
+  color: #d4d4d4;
+}
+
+.cart-info .card-info-wrap .border-bt {
+  border: 1px solid #C0809B;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+.cart-info .card-info-wrap .border-bt:last-child {
+  border-bottom: 1px solid #d4d4d4 !important;
+  margin-bottom: 0px;
+}
+
+.cart-info .cart-info-price {
+  display: inline-block;
+  padding: 20px 0px;
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid #C0809B;
+  font-size: 20px;
+}
+
+.cart-info .cart-info-button {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.cart-info .cart-info-button .info-btn {
+  font-size: 16px;
+  padding: 15px 30px;
+  flex-basis: 49%;
+  background-color: #D2A9AF;
+  color: #ffffff;
+  border: 1px solid #D2A9AF;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  transition: all .3s;
+}
+
+.cart-info .cart-info-button :hover {
+  background-color: #ffffff;
+  color: #D2A9AF;
+  border-radius: 5px;
 }
 
 /* ---- Mini cart summary section end ---- */
