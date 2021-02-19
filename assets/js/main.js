@@ -54,5 +54,5 @@ cartClose.addEventListener("click", () => {
 });
 
 })();
-
+AOS.init();
 /* Show cart end */

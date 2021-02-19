@@ -183,6 +183,7 @@ html, body {
 }
 .body-wrapper{
   width: 100%;
+  height: 100vh;
   padding: auto;
   margin: auto;
   background-color: transparent;
@@ -209,7 +210,7 @@ a.show-more-btn:hover{
 /* ---- Mini cart summary section start ---- */
 .cart-info-base-view{
   // width: 350px !important;
-  // right: 0 !important;
+  // right: 0 ;
   // top: 0;
   
   
@@ -219,7 +220,7 @@ a.show-more-btn:hover{
   height: 100vh;
   padding: 0px 30px;
   position: fixed;
-  // right: -100px;
+  right: -100px;
   top: 0;
   background-color: #ffffff;
   z-index: 2;
@@ -464,11 +465,14 @@ svg.svg-inline--fa.fa-shopping-basket.fa-w-18, svg.svg-inline--fa.fa-user.fa-w-1
 
 /* Footer CSS start */
 footer{
+  
+  padding-top: 10px;
   margin-top: 20px;
   width: 100%;
   background-color: $primaryColor;
   float: left;
   display: block;
+  vertical-align: baseline;
   .footer-section{
     float: left;
     display: block;
@@ -869,3 +873,40 @@ section.new-product-section {
 }
 /* ------ New Products section css end --------- */
 /* ------------ Home page css End -------------- */
+
+/* ------ Login Rgister page CSS start --------*/
+.login-regi-section {
+  width: 100%;
+  display: block;
+  float: left;
+  margin: 4em 0;
+
+  form.logi-regi-form {
+    border: 1px solid #d3ced2;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 2em 0;
+  .log-regi-btn{
+    border-radius: 7px;
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    border-color: $primaryColor;
+    background-color: $primaryColor;
+    color: #ffffff;
+    height: 49px !important;
+    line-height: 1;
+    font-size: 100%;
+    font-weight: 700;
+    display: inline-block;
+
+  }
+  .log-regi-btn:hover{
+    background-color: #ffffff;
+    color: $primaryColor;
+    box-shadow: 0px 0px 10px 0px rgba($color: #000000, $alpha: 0.5);
+  }
+}
+}
+/* ------ Login Rgister page CSS end --------*/
