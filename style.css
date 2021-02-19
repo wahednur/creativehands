@@ -113,18 +113,11 @@ a.show-more-btn:hover {
 }
 
 /* ---- Mini cart summary section start ---- */
-.cart-info-base-view {
-  width: 350px !important;
-  right: 0 !important;
-  top: 0;
-}
-
 .cart-info-base {
   width: 0;
   height: 100vh;
   padding: 0px 30px;
   position: fixed;
-  right: -100px;
   top: 0;
   background-color: #ffffff;
   z-index: 2;

@@ -26,25 +26,32 @@ $('.owl-carousel').owlCarousel({
 }) /* Category carousel end */
 
 /* Show cart start */
-$(function() {
-    const cartInfo = document.getElementById("cart-info");
-    const cart = document.getElementById("cart-info-base");
-    const closeBtn = document.getElementById("close-btn")
-    const closeDiv = document.getElementById("cart-info-base")
 
-    cartInfo.addEventListener("click", function(){
-        cart.classList.toggle("cart-info-base-view");
-        
-        
-        
-    });
 
-    closeBtn.addEventListener("click", function(){
-        closeDiv.classList.toggle("cart-info-base");
-        document.getElementById("cart-info-base").style.display = "none";
-        
-    });
+/* Show cart end */
+ $(function() {
+const cartOpen = document.querySelector(".cart-info");
+const cartClose = document.querySelector(".close__toggle");
+const cartDivOpen = document.querySelector(".cart-info-base");
+const cartConteiner = document.querySelector(".cart-info-base");
 
+cartOpen.addEventListener("click", () => {
+    cartDivOpen.classList.add("open");
+    document.body.classList.add("active");
+    cartConteiner.style.right = "0";
+    cartConteiner.style.width = "350px";
+    cartConteiner.style.opacity = "1.0";
+
+});
+
+cartClose.addEventListener("click", () => {
+    cartDivOpen.classList.remove("open");
+    document.body.classList.remove("active");
+    cartConteiner.style.right = "-355px";
+    cartConteiner.style.opacity = "0.0";
+    
+
+});
 
 })();
 
