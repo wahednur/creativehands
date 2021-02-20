@@ -1,4 +1,25 @@
 
+function showMenuFunction() {
+  var x = document.getElementById("toggle-menu");
+
+  if (x.style.display === "block") {
+    x.classList.remove("animate__zoomIn");
+    x.classList.add("animate__zoomOut");
+    setTimeout(() => {
+      x.classList.remove("animate__zoomOut");
+      x.style.display = "none";
+    }, 600);
+    
+    
+  } else {
+    
+    x.style.display = "block";
+    x.classList.remove("animate__zoomOut");
+    x.classList.add("animate__zoomIn");
+    
+  }
+}
+
 
 /* Category carousel start */
 $('.owl-carousel').owlCarousel({
