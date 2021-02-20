@@ -360,6 +360,32 @@ svg.svg-inline--fa.fa-shopping-basket.fa-w-18, svg.svg-inline--fa.fa-user.fa-w-1
   }
 }
 
+/* Navbar media qurery*/
+@media (max-width: 575px) {
+  .container {
+    width: 500px !important;
+  }
+  .footer-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .nav.navbar.navbar-expand-lg {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .navbar {
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+  }
+}
+
 /* Nav CSS end*/
 /* Footer CSS start */
 footer {
@@ -369,7 +395,6 @@ footer {
   background-color: #D2A9AF;
   float: left;
   display: block;
-  vertical-align: baseline;
 }
 
 footer .footer-section {
@@ -384,7 +409,7 @@ footer .footer-section hr {
 .footer-grid {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(194px, 1fr));
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .footer-col {
@@ -712,6 +737,11 @@ section.new-product-section {
   .product-card .card-content .price-group {
     font-size: .7em;
   }
+  .footer-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (max-width: 500px) {
@@ -724,11 +754,21 @@ section.new-product-section {
   .product-card .card-content .price-group {
     font-size: .7em;
   }
+  .footer-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (max-width: 412px) {
   .container {
     max-width: 388px;
+  }
+  .footer-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
   .product-group {
     grid-template-columns: repeat(2, 1fr);
@@ -770,7 +810,7 @@ section.new-product-section {
   display: block;
   float: left;
   margin: 4em 0;
-  height: calc(100vh - 101px - 350px);
+  min-height: calc(100vh - 101px - 350px);
 }
 
 .login-regi-section form.logi-regi-form {
