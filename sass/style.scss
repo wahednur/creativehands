@@ -880,7 +880,7 @@ section.new-product-section {
   display: block;
   float: left;
   margin: 4em 0;
-  height: calc(100vh - 101px - 351px);
+  height: calc(100vh - 101px - 350px);
 
   form.logi-regi-form {
     border: 1px solid #d3ced2;
@@ -915,5 +915,17 @@ section.new-product-section {
 a.login-link:hover{
   color:$footerHeadingColor;
 }
+}
+.bgcolor::after{
+  content: "";
+  background-color: rgba($color: #000000, $alpha: 0.06);
+  filter: blur(3px);
+  opacity: 1;
+  // z-index: -2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
 }
 /* ------ Login Rgister page CSS end --------*/

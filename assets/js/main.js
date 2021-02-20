@@ -34,6 +34,7 @@ const cartOpen = document.querySelector(".cart-info");
 const cartClose = document.querySelector(".close__toggle");
 const cartDivOpen = document.querySelector(".cart-info-base");
 const cartConteiner = document.querySelector(".cart-info-base");
+const bodyBg = document.querySelector(".body-class");
 
 cartOpen.addEventListener("click", () => {
     cartDivOpen.classList.add("open");
@@ -41,6 +42,8 @@ cartOpen.addEventListener("click", () => {
     cartConteiner.style.right = "0";
     cartConteiner.style.width = "350px";
     cartConteiner.style.opacity = "1.0";
+    bodyBg.classList.add("bgcolor");
+    
 
 });
 
@@ -49,6 +52,7 @@ cartClose.addEventListener("click", () => {
     document.body.classList.remove("active");
     cartConteiner.style.right = "-355px";
     cartConteiner.style.opacity = "0.0";
+    bodyBg.classList.remove("bgcolor");
     
 
 });
