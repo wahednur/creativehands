@@ -614,8 +614,8 @@ button.owl-next {
 .product-card {
   padding: 5px;
   border: 1px solid #D2A9AF;
-  -webkit-box-shadow: -1px 10px 10px 0px black;
-          box-shadow: -1px 10px 10px 0px black;
+  -webkit-box-shadow: -1px 10px 10px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: -1px 10px 10px 0px rgba(0, 0, 0, 0.5);
   text-align: center;
   float: left;
   display: block;
