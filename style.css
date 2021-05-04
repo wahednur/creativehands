@@ -599,6 +599,10 @@ button.owl-next {
 
 /* Product categegory end */
 /* Product card section CSS start */
+.card-title {
+  margin-bottom: -1.25rem !important;
+}
+
 .product-group {
   margin: 0 auto;
   display: -ms-grid;
