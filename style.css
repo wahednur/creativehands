@@ -919,6 +919,10 @@ section.new-product-section {
           box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
+.login-regi-section form.logi-regi-form .form-check {
+  margin-bottom: 3.2em;
+}
+
 .login-regi-section form.logi-regi-form .form-check-label a:hover {
   color: #AE8395;
 }
