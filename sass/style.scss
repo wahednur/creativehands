@@ -1011,8 +1011,10 @@ a.login-link:hover{
     border: 1px solid #dee2e6;
     table.table {
       color: $primaryColor !important;
+      margin-bottom: 0px;
       th{
-        border-top: 0px solid #fff;
+        // border-top: 0px solid #fff;
+        border: none;
       }
       thead {
         background-color: rgba($color: #D2A9AF, $alpha: 0.05);
@@ -1024,6 +1026,8 @@ a.login-link:hover{
           vertical-align: middle;
           td {
             vertical-align: middle;
+            margin: 0;
+            padding: 8px;
             .remove{
               font-size: 25px;
               color: #ccc;
@@ -1031,6 +1035,43 @@ a.login-link:hover{
             .sold-by{
               text-align: left;
             }
+            .qty-box{
+              border: 1px solid $primaryColor;
+              padding-left: 10px;
+              color: #333;
+              
+            }
+            .qty-box:focus-visible{
+              outline: none;
+            }
+            dl{
+              margin-bottom: 0;
+            }
+            .coupone{
+              border: 1px solid #d3ced2;
+              height: 38px;
+              margin-right: 5px;
+            }
+            input[placeholder]{
+              padding-left: 10px;
+            }
+            .coupon-btn{
+              background-color: $primaryColor;
+              color: $whiteText;
+              padding: 3px 10px;
+              border: 1px solid $primaryColor;
+              border-radius: 5px;
+              transition: all ease-in-out 0.3s;
+              &:hover{
+                background-color: $whiteText;
+                color: $primaryColor;
+              }
+              .coupon-section{
+                
+              }
+
+            }
+
           }
         }
       }
@@ -1049,13 +1090,20 @@ a.login-link:hover{
           tr{
             
             td{
-              
+                           
              width: 100% !important;
              float: right;
              text-align: right;
             }
             td.m-none {
               display: none !important;
+            }
+            .sold-by{
+              width: 50%;
+              float: left;
+            }
+            .coupon-section{
+              float: right;
             }
           }
         }

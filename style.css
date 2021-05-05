@@ -957,10 +957,11 @@ section.new-product-section {
 
 .cart-section .table-responsive table.table {
   color: #D2A9AF !important;
+  margin-bottom: 0px;
 }
 
 .cart-section .table-responsive table.table th {
-  border-top: 0px solid #fff;
+  border: none;
 }
 
 .cart-section .table-responsive table.table thead {
@@ -975,6 +976,8 @@ section.new-product-section {
 
 .cart-section .table-responsive table.table tbody tr td {
   vertical-align: middle;
+  margin: 0;
+  padding: 8px;
 }
 
 .cart-section .table-responsive table.table tbody tr td .remove {
@@ -984,6 +987,45 @@ section.new-product-section {
 
 .cart-section .table-responsive table.table tbody tr td .sold-by {
   text-align: left;
+}
+
+.cart-section .table-responsive table.table tbody tr td .qty-box {
+  border: 1px solid #D2A9AF;
+  padding-left: 10px;
+  color: #333;
+}
+
+.cart-section .table-responsive table.table tbody tr td .qty-box:focus-visible {
+  outline: none;
+}
+
+.cart-section .table-responsive table.table tbody tr td dl {
+  margin-bottom: 0;
+}
+
+.cart-section .table-responsive table.table tbody tr td .coupone {
+  border: 1px solid #d3ced2;
+  height: 38px;
+  margin-right: 5px;
+}
+
+.cart-section .table-responsive table.table tbody tr td input[placeholder] {
+  padding-left: 10px;
+}
+
+.cart-section .table-responsive table.table tbody tr td .coupon-btn {
+  background-color: #D2A9AF;
+  color: #FFfFFF;
+  padding: 3px 10px;
+  border: 1px solid #D2A9AF;
+  border-radius: 5px;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+.cart-section .table-responsive table.table tbody tr td .coupon-btn:hover {
+  background-color: #FFfFFF;
+  color: #D2A9AF;
 }
 
 @media (max-width: 768px) {
@@ -997,6 +1039,13 @@ section.new-product-section {
   }
   .cart-section .table-responsive table.table tbody tr td.m-none {
     display: none !important;
+  }
+  .cart-section .table-responsive table.table tbody tr .sold-by {
+    width: 50%;
+    float: left;
+  }
+  .cart-section .table-responsive table.table tbody tr .coupon-section {
+    float: right;
   }
 }
 
