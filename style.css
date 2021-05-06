@@ -77,7 +77,6 @@ ul {
 }
 
 html, body {
-  height: 100%;
   width: 100%;
   padding: 0%;
   margin: 0%;
@@ -934,6 +933,10 @@ section.new-product-section {
 
 /* ------ Login Rgister page CSS end --------*/
 /*  Cart page css start  */
+.cart-section {
+  height: calc(100vh - 395px);
+}
+
 .cart-section .product-img {
   width: 70px;
   height: 70px;
@@ -1145,7 +1148,51 @@ section.new-product-section {
 }
 
 /*  Cart page css end  */
-/* -------- ddd ------- */
+/* -------- Single product page section CSS start ------- */
+section.sigle-product {
+  width: 100%;
+  float: left;
+  display: block;
+}
+
+section.sigle-product .product-image-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.sigle-product .product-image-section .img-gallery {
+  width: 60px;
+}
+
+section.sigle-product .product-image-section .img-gallery .img-list {
+  width: 100%;
+  height: 100%;
+}
+
+section.sigle-product .product-image-section .img-gallery .img-list img {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+section.sigle-product .product-image-section .img-gallery .img-list .thumnail {
+  opacity: .5;
+}
+
+section.sigle-product .image-preview {
+  width: calc(100% - 70px);
+}
+
+section.sigle-product .image-preview img {
+  width: 100%;
+}
+
+/* -------- Single product page section CSS end ------- */
 /* -------- ddd ------- */
 /* -------- ddd ------- */
 /* -------- ddd ------- */
