@@ -230,11 +230,11 @@
                 <div class="product-image-section">
                     <div class="img-gallery">
                         <div class="img-list">
-                            <img src="assets/images/pottery.jpeg" alt="" class="thumnail active">
-                            <img src="assets/images/resin.jpeg" alt="" class="thumnail">
-                            <img src="assets/images/swing.jpg" alt="" class="thumnail">
-                            <img src="assets/images/wicker.jpeg" alt="" class="thumnail">
-                            <img src="assets/images/woo.jpeg" alt="" class="thumnail">
+                            <img src="assets/images/pottery.jpeg" alt="" class="thumnail active" id="thumnail">
+                            <img src="assets/images/resin.jpeg" alt="" class="thumnail" id="thumnail">
+                            <img src="assets/images/swing.jpg" alt="" class="thumnail" id="thumnail">
+                            <img src="assets/images/wicker.jpeg" alt="" class="thumnail" id="thumnail">
+                            <img src="assets/images/woo.jpeg" alt="" class="thumnail" id="thumnail">
                         </div>
                     </div>
                     <div class="image-preview">
@@ -336,6 +336,7 @@
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script type="text/javascript" src="assets/js/cart.js"></script>
     <script src="assets/js/countrystatecity.js"></script>
+    <script src="assets/js/elevateZoom-3.0.8.min.js"></script>
 
 <script type="text/javascript">
         // product page
@@ -355,8 +356,16 @@
 
                             this.classList.add('active')
                             document.getElementById('featured').src = this.src
-                        })
-                    }
+                            document.getElementById('featured').scrollLeft -= 360
+                        });
+                    };
+
+                    $('#featured').elevateZoom({
+                        zoomType: 'inner',
+                        cursor: 'cursor',
+                        zoomWindowFadeIn: 600,
+                        zoomWindowFadeOut: 850
+                    });
 
     </script>
     <!-- body bottom javascript end  -->
