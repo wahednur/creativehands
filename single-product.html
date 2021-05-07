@@ -230,7 +230,7 @@
                 <div class="product-image-section">
                     <div class="img-gallery">
                         <div class="img-list">
-                            <img src="assets/images/pottery.jpeg" alt="" class="thumnail">
+                            <img src="assets/images/pottery.jpeg" alt="" class="thumnail active">
                             <img src="assets/images/resin.jpeg" alt="" class="thumnail">
                             <img src="assets/images/swing.jpg" alt="" class="thumnail">
                             <img src="assets/images/wicker.jpeg" alt="" class="thumnail">
@@ -238,7 +238,7 @@
                         </div>
                     </div>
                     <div class="image-preview">
-                        <img src="assets/images/swing.jpg" alt="">
+                        <img id="featured" src="assets/images/swing.jpg" alt="">
                     </div>
                 </div>
                 <!-- Product image section end -->
@@ -323,6 +323,8 @@
     </footer>
     <!-- Footer Section end  -->
 
+    
+
     <!-- body bottom javascript start  -->
     <script type="text/javascript" src="assets/js/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
@@ -335,7 +337,28 @@
     <script type="text/javascript" src="assets/js/cart.js"></script>
     <script src="assets/js/countrystatecity.js"></script>
 
+<script type="text/javascript">
+        // product page
+            let thumbnails = document.getElementsByClassName('thumnail')
 
+                    let activeImages = document.getElementsByClassName('active')
+
+                    for (var i=0; i < thumbnails.length; i++){
+
+                        thumbnails[i].addEventListener('click', function(){
+                            console.log(activeImages)
+                            
+                            if (activeImages.length > 0){
+                                activeImages[0].classList.remove('active')
+                            }
+                            
+
+                            this.classList.add('active')
+                            document.getElementById('featured').src = this.src
+                        })
+                    }
+
+    </script>
     <!-- body bottom javascript end  -->
 </body>
 

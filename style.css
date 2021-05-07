@@ -1178,14 +1178,27 @@ section.sigle-product .product-image-section .img-gallery .img-list img {
   height: 60px;
   margin-bottom: 10px;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 section.sigle-product .product-image-section .img-gallery .img-list .thumnail {
   opacity: .5;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+section.sigle-product .product-image-section .img-gallery .img-list .thumnail:hover {
+  opacity: 1;
+}
+
+section.sigle-product .product-image-section .img-gallery .img-list .thumnail.active {
+  opacity: 1;
 }
 
 section.sigle-product .image-preview {
   width: calc(100% - 70px);
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 section.sigle-product .image-preview img {

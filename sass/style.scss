@@ -1252,15 +1252,25 @@ section.sigle-product{
           height: 60px;
           margin-bottom: 10px;
           margin-right: 10px;
+          cursor: pointer;
         }
         .thumnail{
           opacity: .5;
+          transition: all ease-in-out 0.3s;
+          &:hover{
+            opacity: 1;
+          }
+          
+        }
+        .thumnail.active {
+          opacity: 1;
         }
       }
     }
   }
   .image-preview{
     width: calc(100% - 70px);
+    object-fit: cover;
     img{
       width: 100%;
     }
