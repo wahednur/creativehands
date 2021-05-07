@@ -1149,6 +1149,14 @@ section.new-product-section {
 
 /*  Cart page css end  */
 /* -------- Single product page section CSS start ------- */
+.emty-50 {
+  height: 50px;
+  width: 100%;
+  float: left;
+  display: block;
+  margin: 10px auto;
+}
+
 section.sigle-product {
   width: 100%;
   float: left;
@@ -1203,6 +1211,63 @@ section.sigle-product .image-preview {
 
 section.sigle-product .image-preview img {
   width: 100%;
+}
+
+section.sigle-product .product-short-view .product .product-title {
+  margin-bottom: 20px;
+}
+
+section.sigle-product .product-short-view .price {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+section.sigle-product .product-short-view .price bdi {
+  color: #D2A9AF;
+}
+
+section.sigle-product .product-short-view .short-info {
+  margin-bottom: 20px;
+}
+
+section.sigle-product .product-short-view .add-card-section {
+  margin-bottom: 20px;
+  width: 220px;
+  margin: 0 auto;
+}
+
+section.sigle-product .product-short-view .add-card-section .quantity #quantity {
+  border: 1px solid #ddd;
+  padding: .3em;
+  outline: none;
+}
+
+section.sigle-product .product-short-view .add-card-section .add-to-cart-btn {
+  margin-bottom: 20px;
+}
+
+section.sigle-product .product-short-view .add-card-section .add-to-cart-btn .buy-now-btn {
+  background-color: #D2A9AF;
+  padding: 4px 20px;
+  border: 2px solid #D2A9AF;
+  margin-left: 10px;
+  border-radius: 5px;
+  color: #FFfFFF;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+section.sigle-product .product-short-view .add-card-section .add-to-cart-btn .buy-now-btn .buy-btn {
+  margin-left: 10px;
+}
+
+section.sigle-product .product-short-view .add-card-section .add-to-cart-btn .buy-now-btn:hover {
+  background-color: #FFfFFF;
+  color: #D2A9AF;
+}
+
+section.sigle-product .product-short-view .add-card-section .vindor-info p {
+  margin-bottom: 1.75em;
 }
 
 /* -------- Single product page section CSS end ------- */

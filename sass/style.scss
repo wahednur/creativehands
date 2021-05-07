@@ -1088,6 +1088,7 @@ a.login-link:hover{
     }
   }
 }
+
 .cart-total-section{
   .cart-total{
     border: 1px solid #ccc;
@@ -1235,6 +1236,14 @@ a.login-link:hover{
 /*  Cart page css end  */
 
 /* -------- Single product page section CSS start ------- */
+.emty-50 {
+  height: 50px;
+  width: 100%;
+  float: left;
+  display: block;
+  margin: 10px auto;
+  
+}
 section.sigle-product{
   width: 100%;
   float: left;
@@ -1275,7 +1284,62 @@ section.sigle-product{
       width: 100%;
     }
   }
+  .product-short-view {
+    .product{
+      .product-title{
+        margin-bottom: 20px;
+      }
+    }
+    .price{
+      font-size: 22px;
+      margin-bottom: 20px;
+      bdi{
+        color: $primaryColor;
+        span.price-symbole {}
+      }
+    }
+    .short-info{
+      margin-bottom: 20px;
+    }
+    .add-card-section{
+      margin-bottom: 20px;
+      width: 220px;
+      margin: 0 auto;
+      .quantity{
+        #quantity{
+          border: 1px solid #ddd;
+          padding: .3em;
+          outline: none;
+        }
+      }
+      .add-to-cart-btn {
+       margin-bottom: 20px;
+        .buy-now-btn{
+          background-color: $primaryColor;
+          padding: 4px 20px;
+          border: 2px solid $primaryColor;
+          margin-left: 10px;
+          border-radius: 5px;
+          color: $whiteText;
+          transition: all ease-in-out 0.3s;
+          .buy-btn{
+            margin-left: 10px;
+          }
+          &:hover{
+            background-color: $whiteText;
+            color: $primaryColor;
+          }
+        }
+      }
+      .vindor-info{
+        p{
+          margin-bottom: 1.75em;
+        }
+      }
+    }
+  }
 }
+
 /* -------- Single product page section CSS end ------- */
 /* -------- ddd ------- */
 /* -------- ddd ------- */
