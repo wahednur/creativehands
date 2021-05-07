@@ -1338,8 +1338,35 @@ section.sigle-product{
       }
     }
   }
+  
 }
-
+.product-description {
+  margin-top: 50px;
+  
+  nav {
+    .nav{
+      justify-content: center !important;
+      justify-content: space-around;
+    }
+    #nav-tab{
+      border-top: 1px solid rgba(0, 0, 0, .05);
+      border-bottom: 1px solid $primaryColor;
+      a{
+        padding: .8em 1.2em !important;
+        margin-right: 1em;
+      }
+    }
+  }
+}
+.nav-tabs .nav-link.active {
+  background-color: transparent;
+  border: none;
+  border-top: 3px solid $primaryColor;
+}
+.nav-tabs .nav-link:hover{
+  border: none;
+  border-top: 3px solid $primaryColor;
+}
 /* -------- Single product page section CSS end ------- */
 /* -------- ddd ------- */
 /* -------- ddd ------- */

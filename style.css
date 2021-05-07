@@ -1270,6 +1270,39 @@ section.sigle-product .product-short-view .add-card-section .vindor-info p {
   margin-bottom: 1.75em;
 }
 
+.product-description {
+  margin-top: 50px;
+}
+
+.product-description nav .nav {
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.product-description nav #nav-tab {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid #D2A9AF;
+}
+
+.product-description nav #nav-tab a {
+  padding: .8em 1.2em !important;
+  margin-right: 1em;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: transparent;
+  border: none;
+  border-top: 3px solid #D2A9AF;
+}
+
+.nav-tabs .nav-link:hover {
+  border: none;
+  border-top: 3px solid #D2A9AF;
+}
+
 /* -------- Single product page section CSS end ------- */
 /* -------- ddd ------- */
 /* -------- ddd ------- */
