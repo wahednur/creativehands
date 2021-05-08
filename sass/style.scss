@@ -1342,6 +1342,7 @@ section.sigle-product{
 }
 .product-description {
   margin-top: 50px;
+  text-align: center;
   
   nav {
     .nav{
@@ -1362,10 +1363,53 @@ section.sigle-product{
   background-color: transparent;
   border: none;
   border-top: 3px solid $primaryColor;
+  color: $cartColor;
 }
 .nav-tabs .nav-link:hover{
-  border: none;
+  border-color: transparent;
   border-top: 3px solid $primaryColor;
+  color: $cartColor;
+}
+.tab-pane{
+  padding: 20px;
+}
+.product-vendor,
+.rev-title,
+.qan-title {
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+.rev-left{
+  width: 100%;
+  display: block;
+  float: left;
+  margin-bottom: 20px;
+}
+.vendor-rev-link{
+  float: left;
+  width: 100%;
+  display: block;
+}
+.rev-center{
+  width: 100%;
+}
+.qna{
+  padding: 10px 20px;
+  font-size: 17px;
+  border: 1px solid #e2e2e2;
+  height: 54px;
+  &:focus-visible{
+    border: 1px solid blue;
+  }
+}
+
+@media(max-width:667px){
+  .product-short-view{
+    margin-top: 50px;
+  }
 }
 /* -------- Single product page section CSS end ------- */
 /* -------- ddd ------- */
