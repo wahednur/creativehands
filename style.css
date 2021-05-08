@@ -933,10 +933,6 @@ section.new-product-section {
 
 /* ------ Login Rgister page CSS end --------*/
 /*  Cart page css start  */
-.cart-section {
-  height: calc(100vh - 395px);
-}
-
 .cart-section .product-img {
   width: 70px;
   height: 70px;
