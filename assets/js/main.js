@@ -87,8 +87,4 @@ shipBtn.addEventListener('click', () => {
   // shipOpen.style.transition = "all 0.3s";
 })
 
-
-
-
-AOS.init();
 /* Show cart end */
