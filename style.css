@@ -1351,7 +1351,179 @@ section.sigle-product .product-short-view .add-card-section .vindor-info p {
 }
 
 /* -------- Single product page section CSS end ------- */
-/* -------- ddd ------- */
+/* -------- Checkount page CSS start ------- */
+section.checkout {
+  width: 100%;
+  display: block;
+  float: left;
+}
+
+section.checkout .checout-space {
+  height: 4rem;
+  width: 100%;
+  float: left;
+  display: block;
+}
+
+section.checkout .container .page-title {
+  width: 100%;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+section.checkout .container .returning-customer {
+  width: 100%;
+  float: left;
+}
+
+section.checkout .container .returning-customer p {
+  color: #515151;
+}
+
+section.checkout .container .returning-customer p .icon {
+  color: #D2A9AF;
+  margin-right: 10px;
+}
+
+section.checkout .container .returning-customer .couponobg {
+  color: #515151;
+  background-color: #f7f6f7;
+  padding: 1em 2em 1em 1.5em;
+  width: 100%;
+  border-top: 3px solid #D2A9AF;
+  margin: 0 0 2em;
+}
+
+section.checkout .container .returning-customer .card-body p {
+  color: #D2A9AF;
+}
+
+section.checkout .container .coupon-code {
+  width: 100%;
+}
+
+section.checkout .container .coupon-code p .icon {
+  color: #D2A9AF;
+  margin-right: 10px;
+}
+
+section.checkout .container .coupon-code .couponobg {
+  color: #515151;
+  background-color: #f7f6f7;
+  padding: 1em 2em 1em 1.5em;
+  width: 100%;
+  border-top: 3px solid #D2A9AF;
+  margin: 0 0 2em;
+}
+
+section.checkout .container .coupon-code .card-body p {
+  color: #D2A9AF;
+}
+
+section.checkout .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #D2A9AF;
+}
+
+section.checkout .coupon-input:focus {
+  outline: none;
+  border: 1px solid #D2A9AF;
+}
+
+section.checkout .coupone-section {
+  width: 100%;
+  float: left;
+}
+
+section.checkout .coupone-section .coupone-group {
+  width: 100%;
+}
+
+section.checkout .coupone-section .coupone-group .coupon-input {
+  width: calc(100% - 200px);
+  height: 40px;
+  padding: 9px;
+}
+
+section.checkout .coupone-section .coupone-group .coupon-btn {
+  background-color: #D2A9AF;
+  padding: 10px 40px;
+  border: 1px solid #D2A9AF;
+  line-height: 1.35;
+  border-radius: 7px;
+  color: #FFfFFF;
+  border: 2px solid #D2A9AF;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+section.checkout .coupone-section .coupone-group .coupon-btn:hover {
+  background-color: #FFfFFF;
+  color: #D2A9AF;
+}
+
+section.checkout .address-order-details .billing-title {
+  font-size: 1.2rem;
+  padding: 20px 0 14px;
+  margin: 0 0 20px;
+  border-bottom: 1px solid #ebebeb;
+  width: 100%;
+}
+
+section.checkout .address-order-details .billing-form .user-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.checkout .address-order-details .billing-form .user-group .first-name,
+section.checkout .address-order-details .billing-form .user-group .last-name {
+  width: 48%;
+}
+
+section.checkout .address-order-details .dif-ship-btn {
+  background-color: #FFfFFF;
+  padding: 10px 0px;
+  border: 0;
+  color: #D2A9AF;
+  cursor: pointer;
+}
+
+section.checkout .address-order-details .dif-ship-btn input {
+  position: relative;
+  margin-right: 5px;
+}
+
+section.checkout .address-order-details .dif-ship-btn input ::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+section.checkout label {
+  margin-bottom: 0px !important;
+  cursor: pointer;
+}
+
+.different-address {
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: all ease-in-out 0.3s !important;
+  transition: all ease-in-out 0.3s !important;
+}
+
+.different-address.active {
+  height: 100%;
+}
+
+/* -------- Checkount page CSS end ------- */
 /* -------- ddd ------- */
 /* -------- ddd ------- */
 /* -------- ddd ------- */

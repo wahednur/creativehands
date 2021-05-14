@@ -1412,7 +1412,164 @@ section.sigle-product{
   }
 }
 /* -------- Single product page section CSS end ------- */
-/* -------- ddd ------- */
+/* -------- Checkount page CSS start ------- */
+section.checkout{
+  width: 100%;
+  display: block;
+  float: left;
+  .checout-space{
+    height: 4rem;
+    width: 100%;
+    float: left;
+    display: block;
+  }
+  .container{
+    .page-title{
+      width: 100%;
+      font-size: 2rem;
+      line-height: 1.2;
+    }
+    .returning-customer{
+      width: 100%;
+      float: left;
+      p{
+        color: #515151;
+        
+        .icon{
+          color: $primaryColor;
+          margin-right: 10px;
+        }
+      }
+      .couponobg{
+        color: #515151;
+        background-color: #f7f6f7;
+        padding: 1em 2em 1em 1.5em;
+        width: 100%;
+        border-top: 3px solid $primaryColor;
+        margin: 0 0 2em;
+      }
+      .card-body{
+        p{
+          color: $primaryColor;
+        }
+      }
+      
+      
+    }
+    .coupon-code {
+      width: 100%;
+      p {
+        
+        .icon {
+          color: $primaryColor;
+          margin-right: 10px;
+        }
+      }
+      .couponobg{
+        color: #515151;
+        background-color: #f7f6f7;
+        padding: 1em 2em 1em 1.5em;
+        width: 100%;
+        border-top: 3px solid $primaryColor;
+        margin: 0 0 2em;
+      }
+      .card-body{
+        p{
+          color: $primaryColor;
+        }
+      }
+    }
+  }
+  .form-control:focus{
+    box-shadow: none;
+    border: 1px solid $primaryColor;
+  }
+  .coupon-input:focus {
+    outline: none;
+    border: 1px solid $primaryColor;
+    
+  }
+  .coupone-section{
+    width: 100%;
+    float: left;
+    .coupone-group {
+      width: 100%;
+      .coupon-input{
+        width: calc(100% - 200px);
+        height: 40px;
+        padding: 9px;
+      }
+
+      .coupon-btn {
+        background-color: $primaryColor;
+        padding: 10px 40px;
+        border: 1px solid $primaryColor;
+        line-height: 1.35;
+        border-radius: 7px;
+        color: $whiteText;
+        border: 2px solid $primaryColor;
+        transition: all ease-in-out 0.3s;
+        &:hover{
+         background-color: $whiteText;
+         color: $primaryColor;
+        }
+        
+      }
+    }
+  }
+  .address-order-details{
+    .billing-title{
+      font-size: 1.2rem;
+      padding: 20px 0 14px;
+      margin: 0 0 20px;
+      border-bottom: 1px solid #ebebeb;
+      width: 100%;
+    }
+    .billing-form{
+      .user-group{
+        display: flex;
+        justify-content: space-between;
+        .first-name,
+        .last-name {
+          width: 48%;
+        }
+      }
+      
+    }
+    .dif-ship-btn{
+      background-color: $whiteText;
+      padding: 10px 0px;
+      border: 0;
+      color: $primaryColor;
+      cursor: pointer;
+      input{
+        position: relative;
+        margin-right: 5px;
+        ::before{
+          content: '';
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          position: absolute;
+        }
+      }
+    }
+  }
+  label {
+    margin-bottom: 0px !important;
+    cursor: pointer;
+  }
+}
+.different-address {
+  height: 0;
+  overflow: hidden;
+  transition: all ease-in-out 0.3s !important;
+}
+.different-address.active{
+  height: 100%;
+}
+/* -------- Checkount page CSS end ------- */
 /* -------- ddd ------- */
 /* -------- ddd ------- */
 /* -------- ddd ------- */

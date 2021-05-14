@@ -78,9 +78,14 @@ cartClose.addEventListener("click", () => {
 
 });
 
-})();
+});
 
-
+const shipBtn = document.querySelector('.dif-ship-btn');
+const shipOpen = document.querySelector('.different-address');
+shipBtn.addEventListener('click', () => {
+  shipOpen.classList.toggle("active");
+  // shipOpen.style.transition = "all 0.3s";
+})
 
 
 
