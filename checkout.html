@@ -249,11 +249,22 @@
                             </div>
                             <div class="col-md-12 col-lg-6">
                                 <div class="password">
-                                <div class="pre-login">
-                                    <label for="for-user">Password <span class="requred text-danger">*</span></label>
-                                    <input type="text" class="form-control">
+                                    <div class="pre-login">
+                                        <label for="for-user">Password <span class="requred text-danger">*</span></label>
+                                        <input type="text" class="form-control">
+                                    </div>
                                 </div>
                             </div>
+                            <div class="col-md-12">
+                                <div class="login-action-section mt-2">
+                                    <input type="checkbox">
+                                    <label for="loging-save">Remember me</label>
+                                    <div class="action-section">
+                                        <button class="login-btn">Login</button>
+                                    <a href="#" class="lost-pass">Lost your password?</a>
+                                    </div>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -284,114 +295,105 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="address-order-details row">
-        <div class="col-lg-7 col-md-12">
-            <div class="row">
-                <div class="col-md-12 col-lg-11">
-                    <div class="row">
-                        <h3 class="billing-title">Billing details</h3>
-                        
-                        <div class="billing-form w-100">
-                            <div class="user-group">
-                                <div class="first-name">
-                                    <label for="first-name">First name <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="last-name">
-                                    <label for="last-name">Last name <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            <div class="country mt-3">
-                                <select name="country" class="countries form-control" id="countryId">
-                                    <option value="Saudi Arabia" title="Saudi Arabia">Select Country</option>
-                                </select>
-                            </div>
-                            <div class="street-address mt-3">
-                                <label for="street-address">Street address <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" placeholder="House number and street name">
-                                    <input type="text" class="form-control mt-3" placeholder="Apartment, suite, unit, etc. (optional)">
-                            </div>
-                            <div class="town-city mt-3">
-                                <label for="town-city">Town / City <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control">
-                                   
-                            </div>
-                            <div class="postcode mt-3">
-                                <label for="postcode-zip">Postcode / ZIP <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control">
-                                   
-                            </div>
-                            <div class="phone mt-3">
-                                <label for="phone">Phone <span class="text-danger">*</span></label>
-                                    <input type="tel" class="form-control">
-                                   
-                            </div>
-                            <div class="email mt-3">
-                                <label for="email">Phone <span class="text-danger">*</span></label>
-                                    <input type="email" class="form-control">
-                                   
-                            </div>
-                        </div>
-                        <button class="dif-ship-btn mt-3">
-                            <input type="checkbox" name="diff-add" id="dif-address-btn"> 
-                            <label for="checkbox">Ship to a different address?</label>
-                        </button>
-                        <div class="different-address w-100">
-                            <div class="billing-form w-100">
-                            <div class="user-group">
-                                <div class="first-name">
-                                    <label for="first-name">First name <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="last-name">
-                                    <label for="last-name">Last name <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            <div class="country mt-3">
-                                <select name="country" class="countries form-control" id="countryId">
-                                    <option value="Saudi Arabia" title="Saudi Arabia">Select Country</option>
-                                </select>
-                            </div>
-                            <div class="street-address mt-3">
-                                <label for="street-address">Street address <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" placeholder="House number and street name">
-                                    <input type="text" class="form-control mt-3" placeholder="Apartment, suite, unit, etc. (optional)">
-                            </div>
-                            <div class="town-city mt-3">
-                                <label for="town-city">Town / City <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control">
-                                   
-                            </div>
-                            <div class="postcode mt-3">
-                                <label for="postcode-zip">Postcode / ZIP <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control">
-                                   
-                            </div>
-                            <div class="phone mt-3">
-                                <label for="phone">Phone <span class="text-danger">*</span></label>
-                                    <input type="tel" class="form-control">
-                                   
-                            </div>
-                            <div class="email mt-3">
-                                <label for="email">Phone <span class="text-danger">*</span></label>
-                                    <input type="email" class="form-control">
-                                   
-                            </div>
-                        </div>
-                        </div>
-                        <div class="note w-100">
-                            <label for="note">Order notes (optional)</label>
-                            <textarea name="note" id="note" class="form-control"></textarea>
-                        </div>
+    <div class="container customer-order">
+        <div class="customer-details">
+            <h3 class="billing-title">Billing details</h3>
+            <div class="billing-form w-100">
+                <div class="user-group">
+                    <div class="first-name">
+                        <label for="first-name">First name <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control">
                     </div>
-            
+                    <div class="last-name">
+                        <label for="last-name">Last name <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="country mt-3">
+                    <select name="country" class="countries form-control" id="countryId">
+                        <option value="Saudi Arabia" title="Saudi Arabia">Select Country</option>
+                    </select>
+                </div>
+                <div class="street-address mt-3">
+                    <label for="street-address">Street address <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" placeholder="House number and street name">
+                        <input type="text" class="form-control mt-3" placeholder="Apartment, suite, unit, etc. (optional)">
+                </div>
+                <div class="town-city mt-3">
+                    <label for="town-city">Town / City <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control">
+
+                </div>
+                <div class="postcode mt-3">
+                    <label for="postcode-zip">Postcode / ZIP <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control">
+
+                </div>
+                <div class="phone mt-3">
+                    <label for="phone">Phone <span class="text-danger">*</span></label>
+                        <input type="tel" class="form-control">
+
+                </div>
+                <div class="email mt-3">
+                    <label for="email">Phone <span class="text-danger">*</span></label>
+                        <input type="email" class="form-control">
+
                 </div>
             </div>
+            <button class="dif-ship-btn mt-3">
+                <input type="checkbox" name="diff-add" id="dif-address-btn">
+                <label for="checkbox">Ship to a different address?</label>
+            </button>
+            <div class="different-address w-100">
+                <div class="billing-form w-100">
+                    <div class="user-group">
+                        <div class="first-name">
+                            <label for="first-name">First name <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="last-name">
+                            <label for="last-name">Last name <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="country mt-3">
+                        <select name="country" class="countries form-control" id="countryId">
+                            <option value="Saudi Arabia" title="Saudi Arabia">Select Country</option>
+                        </select>
+                    </div>
+                    <div class="street-address mt-3">
+                        <label for="street-address">Street address <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" placeholder="House number and street name">
+                            <input type="text" class="form-control mt-3" placeholder="Apartment, suite, unit, etc. (optional)">
+                    </div>
+                    <div class="town-city mt-3">
+                        <label for="town-city">Town / City <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control">
+
+                    </div>
+                    <div class="postcode mt-3">
+                        <label for="postcode-zip">Postcode / ZIP <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control">
+
+                    </div>
+                    <div class="phone mt-3">
+                        <label for="phone">Phone <span class="text-danger">*</span></label>
+                            <input type="tel" class="form-control">
+
+                    </div>
+                    <div class="email mt-3">
+                        <label for="email">Phone <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control">
+
+                    </div>
+                </div>
+            </div>
+            <div class="note w-100">
+                <label for="note">Order notes (optional)</label>
+                <textarea name="note" id="note" class="form-control"></textarea>
+            </div>
         </div>
-        <div class="col-lg-5 col-md-12 border">
+        <div class="order-review">
             <p class="your-order-title">Your order</p>
             <div class="checkout-order-table">
                 <div class="table-responsive">
@@ -405,7 +407,7 @@
                         <tbody>
                             <tr>
                                 <td class="product-name">
-                                    <strong class="product quantity">1 x </strong> حامل طارة التطريز
+                                    <strong class="product-quantity">1 x </strong> حامل طارة التطريز
                                     <dl class="variation">
                                         <dt class="variration-soldby">Sold By:</dt>
                                         <dt class="variration-soldby">kahraman</dt>
@@ -445,7 +447,7 @@
                                     <td>
                                         <span class="price-amount">
                                             <bdi>
-                                                710 
+                                                710
                                                 <span class="price-symble">
                                                     SR
                                                 </span>
@@ -462,7 +464,7 @@
                                     <td>
                                         <span class="price-amount">
                                             <bdi>
-                                                710 
+                                                710
                                                 <span class="price-symble">
                                                     SR
                                                 </span>
@@ -477,34 +479,34 @@
                 <div class="checkout-payment">
                     <ul class="payment-methods">
                         <li class="payment-method-item-list">
-                            <span class="payment-btn">
+                            <span class="payment-btn dbt">
                                 <input type="radio" class="input-radio">
                                 <label for="dbt">Direct bank transfer</label>
                             </span>
-                            <div class="payment-method-item">
+                            <div class="payment-method-item dbt-div active">
                                 <p>
                                     Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.
                                 </p>
                             </div>
                         </li>
-                        
+
                         <li class="payment-method-item-list">
-                            <span class="payment-btn">
+                            <span class="payment-btn cod">
                                 <input type="radio" class="input-radio">
                                 <label for="cod">Cash on delivery </label>
                             </span>
-                            <div class="payment-method-item">
+                            <div class="payment-method-item cod-div">
                                 <p>
                                     Pay with cash upon delivery.
                                 </p>
                             </div>
                         </li>
                          <li class="payment-method-item-list">
-                            <span class="payment-btn">
+                            <span class="payment-btn stc">
                                 <input type="radio" class="input-radio">
                                 <label for="stc"><img src="assets/images/logo3.png" alt=""> </label>
                             </span>
-                            <div class="payment-method-item">
+                            <div class="payment-method-item stc-div">
                                 <div class="bank-info">
                                     <p>Please fill in the fields to process your payment:</p>
                                     <label for="stc-phone-number">STC Phone Number ex.(966512345678) <span class="requred text-danger">*</span></label>
@@ -521,16 +523,15 @@
                     </ul>
                     <div class="confirmation">
                         <p>
-                            <input type="radio">
+                            <input type="checkbox">
                             <label for="confirm">I have read and agree to the website <a href="#">terms and conditions</a> <span class="requred text-danger">*</span>
                             </label>
                         </p>
-                        <button class="form-control" type="submit">Place order</button>
+                        <button class="form-control place-btn" type="submit">Place order</button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 </section>
 <!-- Checkout content end  -->

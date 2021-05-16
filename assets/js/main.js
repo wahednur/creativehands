@@ -85,6 +85,36 @@ const shipOpen = document.querySelector('.different-address');
 shipBtn.addEventListener('click', () => {
   shipOpen.classList.toggle("active");
   // shipOpen.style.transition = "all 0.3s";
-})
+});
 
 /* Show cart end */
+
+
+// Checkout page js 
+
+const dbtBtn = document.querySelector('.dbt');
+const dbtDiv = document.querySelector('.dbt-div');
+const codBtn = document.querySelector('.cod');
+const codDiv = document.querySelector('.cod-div');
+const stcBtn = document.querySelector('.stc');
+const stcDiv = document.querySelector('.stc-div');
+
+dbtBtn.addEventListener('click', () => {
+ 
+  dbtDiv.classList.add('active');
+  codDiv.classList.remove('active');
+  stcDiv.classList.remove('active');
+})
+codBtn.addEventListener('click', () => {
+
+  dbtDiv.classList.remove('active');
+  codDiv.classList.add('active');
+  stcDiv.classList.remove('active');
+})
+
+stcBtn.addEventListener('click', () => {
+
+  dbtDiv.classList.remove('active');
+  codDiv.classList.remove('active');
+  stcDiv.classList.add('active');
+})
