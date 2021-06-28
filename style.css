@@ -1670,9 +1670,13 @@ section.checkout label {
     width: 100% !important;
     margin-bottom: 2em;
   }
+  .rel .margin-top {
+    display: none;
+  }
 }
 
 /* -------- Checkount page CSS end ------- */
+/* -------- Forgot password section start ------- */
 section.forgot {
   float: left;
   display: block;
@@ -1687,30 +1691,106 @@ section.forgot .vh {
 section.forgot .reset-btn {
   background-color: #D2A9AF;
   border-color: #D2A9AF;
+  color: #FFfFFF;
   margin-top: 20px;
 }
 
 section.forgot .reset-btn:hover {
   background-color: #FFfFFF;
+  color: #D2A9AF;
 }
 
 section.forgot .rel {
-  position: relative;
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
-section.forgot .bottom-0 {
-  bottom: 20px;
+section.forgot .rel .margin-top {
   position: absolute;
+  left: 0;
+  bottom: 20px;
 }
 
-section.forgot .bottom-0:hover {
+/* -------- Forgot password section end ------- */
+/* -------- Vendor Registration CSS strt  ------- */
+section.vendor-rgister .container .vendor-title {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+section.vendor-rgister .container .row .col-md-6 .form-wrapper {
+  padding: 10px;
+  width: 100%;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  border-radius: 2px;
+}
+
+section.vendor-rgister .container .row .col-md-6 .form-wrapper .form-group .form-control {
+  background-color: #fafafa;
+  border: 1px solid #eee;
+  height: 38px;
+  line-height: 38px;
+  color: #889;
+  border-radius: 3px !important;
+}
+
+section.vendor-rgister .container .row .col-md-6 .form-wrapper .form-group .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #000;
+}
+
+section.vendor-rgister .container .row .col-md-6 .form-wrapper .form-group #store-description {
+  height: 100px !important;
+}
+
+section.vendor-rgister .container .row .col-md-6 .form-wrapper .form-group .logo {
+  float: left;
+  width: 100%;
+}
+
+section.vendor-rgister .container .row .col-md-6 .form-wrapper .form-group .form-control.file {
+  line-height: normal;
+}
+
+section.vendor-rgister input[type=text],
+section.vendor-rgister input[type=file] {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+section.vendor-rgister a.term:hover {
   color: #C0809B;
 }
 
-/* -------- Forgot password section start ------- */
-/* -------- Forgot password section end ------- */
+section.vendor-rgister .vendor-btn {
+  margin-top: 40px;
+}
+
+section.vendor-rgister .vendor-btn .vengor-regi-btn {
+  background: #D2A9AF;
+  padding: 0px 20px;
+  height: 38px;
+  line-height: 38px;
+  border-radius: 7px;
+  color: #FFfFFF;
+  border: #D2A9AF;
+  text-align: center;
+  border: 1px solid #D2A9AF;
+  margin-bottom: 40px;
+}
+
+section.vendor-rgister .vendor-btn .vengor-regi-btn:hover {
+  background-color: #FFfFFF;
+  color: #D2A9AF;
+}
+
+/* -------- Vendor Registration CSS end  ------- */
+/* -------- ddd ------- */
 /* -------- ddd ------- */
 /* -------- ddd ------- */
 /* -------- ddd ------- */
