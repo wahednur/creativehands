@@ -46,8 +46,7 @@ body {
   line-height: 1.86;
   background-color: transparent;
   background-repeat: no-repeat;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /*  Reset HTML */
@@ -110,7 +109,6 @@ a.show-more-btn {
 a.show-more-btn:hover {
   background-color: #ffffff;
   color: #D2A9AF;
-  -webkit-transition: all .3s;
   transition: all .3s;
 }
 
@@ -125,7 +123,6 @@ a.show-more-btn:hover {
   background-color: #ffffff;
   z-index: 2;
   overflow: hidden;
-  -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
 
@@ -142,8 +139,6 @@ a.show-more-btn:hover {
 }
 
 .cart-info-base .card-info-wrap .cart-info-itmes {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   margin-bottom: 20px;
@@ -151,16 +146,12 @@ a.show-more-btn:hover {
 }
 
 .cart-info-base .card-info-wrap .cart-info-itmes .cart-info-img {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  flex: 2;
   margin-right: 20px;
 }
 
 .cart-info-base .card-info-wrap .cart-info-itmes .cart-info-content {
-  -webkit-box-flex: 4;
-      -ms-flex: 4;
-          flex: 4;
+  flex: 4;
 }
 
 .cart-info-base .card-info-wrap .cart-info-itmes .cart-info-content span.qty-price span {
@@ -172,9 +163,7 @@ a.show-more-btn:hover {
 }
 
 .cart-info-base .card-info-wrap .cart-info-itmes .cart-info-item-remove {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   position: relative;
 }
 
@@ -214,26 +203,19 @@ a.show-more-btn:hover {
 }
 
 .cart-info-base .cart-info-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding-top: 20px;
 }
 
 .cart-info-base .cart-info-button .info-btn {
   font-size: 16px;
   padding: 15px 30px;
-  -ms-flex-preferred-size: 49%;
-      flex-basis: 49%;
+  flex-basis: 49%;
   background-color: #D2A9AF;
   color: #ffffff;
   border: 1px solid #D2A9AF;
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-  -webkit-transition: all .3s;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   transition: all .3s;
 }
 
@@ -289,31 +271,20 @@ svg.svg-inline--fa.fa-shopping-basket.fa-w-18, svg.svg-inline--fa.fa-user.fa-w-1
 }
 
 .form-inline {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .form-inline .custom-select {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
 
 .form-inline .search_text {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  flex: 2;
 }
 
 .toggle-collapse {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column-align: center !important;
-      justify-self: center !important;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
+  align-self: center;
+  justify-self: center !important;
   width: fit-content;
   background-color: transparent;
   color: whitesmoke;
@@ -358,8 +329,7 @@ svg.svg-inline--fa.fa-shopping-basket.fa-w-18, svg.svg-inline--fa.fa-user.fa-w-1
   }
   .toggle-collapse {
     display: inline-block;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   .toggle-menu {
     display: none;
@@ -375,7 +345,6 @@ svg.svg-inline--fa.fa-shopping-basket.fa-w-18, svg.svg-inline--fa.fa-user.fa-w-1
     background-color: #d2a9af;
     border-radius: 5px;
     border: 1px solid white;
-    -webkit-box-shadow: 0 0 10px #000;
     box-shadow: 0 0 10px #000;
   }
   .dropdown-menu {
@@ -386,7 +355,6 @@ svg.svg-inline--fa.fa-shopping-basket.fa-w-18, svg.svg-inline--fa.fa-user.fa-w-1
     margin-bottom: 5px !important;
     left: 0 !important;
     right: 0 !important;
-    -webkit-box-shadow: 0 0 10px #000;
     box-shadow: 0 0 10px #000;
   }
 }
@@ -397,29 +365,17 @@ svg.svg-inline--fa.fa-shopping-basket.fa-w-18, svg.svg-inline--fa.fa-user.fa-w-1
     width: 500px !important;
   }
   .nav.navbar.navbar-expand-lg {
-    -ms-flex-flow: row nowrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-            flex-flow: row nowrap;
-    -ms-flex-pack: start;
-    -webkit-box-pack: justify;
-            justify-content: space-between;
+    flex-flow: row nowrap;
+    justify-content: space-between;
     width: 100%;
   }
   .navbar {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     position: relative;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
     padding: .5rem 1rem;
   }
 }
@@ -447,11 +403,9 @@ footer .footer-section hr {
 
 footer .footer-section .footer-grid {
   margin-top: -10px;
-  display: -ms-grid;
   display: grid;
   width: 100%;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 1fr);
 }
 
 footer .footer-section .footer-grid .footer-col {
@@ -468,15 +422,13 @@ footer .footer-section .footer-grid .footer-col:last-child {
 
 @media (max-width: 1023px) {
   footer .footer-section .footer-grid {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 512px) {
   footer .footer-section .footer-grid {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -509,8 +461,6 @@ h4.footer-title {
 
 .copyright {
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   color: #FFfFFF;
 }
@@ -532,7 +482,6 @@ h4.footer-title {
   width: 100%;
   display: block;
   margin: auto;
-  display: -ms-grid;
   display: grid;
   margin-top: 20px;
   padding: 10px;
@@ -557,9 +506,7 @@ h4.footer-title {
 .cateory-slider-section .item .card-body {
   position: absolute;
   bottom: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   width: 100%;
 }
 
@@ -573,7 +520,6 @@ h4.footer-title {
   background-color: #ffffffba;
   padding: 10px;
   font-size: .9em;
-  -webkit-transition: background .3s;
   transition: background .3s;
 }
 
@@ -613,21 +559,18 @@ button.owl-next {
 
 .product-group {
   margin: 0 auto;
-  display: -ms-grid;
   display: grid;
   grid-column-gap: 20px;
   grid-row-gap: 40px;
   width: 100%;
-  -ms-grid-columns: (1fr)[7];
-      grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   margin-bottom: 20px;
 }
 
 .product-card {
   padding: 5px;
   border: 1px solid #D2A9AF;
-  -webkit-box-shadow: -1px 10px 10px 0px rgba(0, 0, 0, 0.5);
-          box-shadow: -1px 10px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: -1px 10px 10px 0px rgba(0, 0, 0, 0.5);
   text-align: center;
   float: left;
   display: block;
@@ -639,7 +582,6 @@ button.owl-next {
 
 .product-card .card-img span.stock-out {
   background-color: rgba(255, 255, 255, 0.88);
-  -webkit-transition: background .3s;
   transition: background .3s;
   text-align: center;
   left: 1em;
@@ -746,7 +688,6 @@ button.owl-next {
 .product-card .card-content .cart-btn a.add-to-cart-btn:hover {
   background-color: #ffffff;
   color: #D2A9AF;
-  -webkit-transition: all .3s;
   transition: all .3s;
 }
 
@@ -772,8 +713,7 @@ section.new-product-section {
 /* ---- Product grid responsive --- */
 @media (min-width: 1025px) {
   .product-group {
-    -ms-grid-columns: (1fr)[7] !important;
-        grid-template-columns: repeat(7, 1fr) !important;
+    grid-template-columns: repeat(7, 1fr) !important;
   }
   .product-card .card-content .price-group {
     font-size: .7em;
@@ -782,8 +722,7 @@ section.new-product-section {
 
 @media (min-width: 922px) {
   .product-group {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   .product-card .card-content .price-group {
     font-size: .7em;
@@ -792,8 +731,7 @@ section.new-product-section {
 
 @media (min-width: 768px) {
   .product-group {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   .product-card .card-content .price-group {
     font-size: .7em;
@@ -805,8 +743,7 @@ section.new-product-section {
     width: 740px;
   }
   .product-group {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .product-card .card-content .price-group {
     font-size: .7em;
@@ -818,8 +755,7 @@ section.new-product-section {
     max-width: 470px;
   }
   .product-group {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .product-card .card-content .price-group {
     font-size: .7em;
@@ -831,8 +767,7 @@ section.new-product-section {
     max-width: 388px;
   }
   .product-group {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .product-card .card-content .price-group {
     font-size: .7em;
@@ -844,8 +779,7 @@ section.new-product-section {
     max-width: 351px;
   }
   .product-group {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .product-card .card-content .price-group {
     font-size: .7em;
@@ -857,8 +791,7 @@ section.new-product-section {
     max-width: 300px;
   }
   .product-group {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .product-card .card-content .price-group {
     font-size: .7em;
@@ -902,8 +835,7 @@ section.new-product-section {
 .login-regi-section form.logi-regi-form .log-regi-btn:hover {
   background-color: #ffffff;
   color: #D2A9AF;
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .login-regi-section form.logi-regi-form .form-check {
@@ -921,8 +853,7 @@ section.new-product-section {
 .bgcolor::after {
   content: "";
   background-color: rgba(0, 0, 0, 0.06);
-  -webkit-filter: blur(3px);
-          filter: blur(3px);
+  filter: blur(3px);
   opacity: 1;
   position: absolute;
   width: 100%;
@@ -1006,7 +937,6 @@ section.new-product-section {
   padding: 3px 10px;
   border: 1px solid #D2A9AF;
   border-radius: 5px;
-  -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
 }
 
@@ -1035,7 +965,6 @@ section.new-product-section {
 .cart-total-section .table tbody tr td .shpping-method {
   height: 0px;
   overflow: hidden;
-  -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
 }
 
@@ -1085,18 +1014,13 @@ section.new-product-section {
 }
 
 .cart-total-section .table tbody .process-btn .checkout-btn-td .process-checkout-btn {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  justify-content: center;
   display: flex;
   width: 100%;
   background-color: #D2A9AF;
   color: #FFfFFF;
   padding: 10px 40px;
   border: 2px solid #D2A9AF;
-  -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
   border-radius: 5px;
 }
@@ -1160,12 +1084,8 @@ section.sigle-product {
 }
 
 section.sigle-product .product-image-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 section.sigle-product .product-image-section .img-gallery {
@@ -1187,7 +1107,6 @@ section.sigle-product .product-image-section .img-gallery .img-list img {
 
 section.sigle-product .product-image-section .img-gallery .img-list .thumnail {
   opacity: .5;
-  -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
 }
 
@@ -1201,8 +1120,7 @@ section.sigle-product .product-image-section .img-gallery .img-list .thumnail.ac
 
 section.sigle-product .image-preview {
   width: calc(100% - 70px);
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 section.sigle-product .image-preview img {
@@ -1249,7 +1167,6 @@ section.sigle-product .product-short-view .add-card-section .add-to-cart-btn .bu
   margin-left: 10px;
   border-radius: 5px;
   color: #FFfFFF;
-  -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
 }
 
@@ -1272,11 +1189,8 @@ section.sigle-product .product-short-view .add-card-section .vindor-info p {
 }
 
 .product-description nav .nav {
-  -webkit-box-pack: center !important;
-      -ms-flex-pack: center !important;
-          justify-content: center !important;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center !important;
+  justify-content: space-around;
 }
 
 .product-description nav #nav-tab {
@@ -1421,8 +1335,7 @@ section.checkout .container .coupon-code .card-body p {
 }
 
 section.checkout .form-control:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   border: 1px solid #D2A9AF;
 }
 
@@ -1454,7 +1367,6 @@ section.checkout .coupone-section .coupone-group .coupon-btn {
   border-radius: 7px;
   color: #FFfFFF;
   border: 2px solid #D2A9AF;
-  -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
 }
 
@@ -1472,12 +1384,8 @@ section.checkout .address-order-details .billing-title {
 }
 
 section.checkout .address-order-details .billing-form .user-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 section.checkout .address-order-details .billing-form .user-group .first-name,
@@ -1493,7 +1401,6 @@ section.checkout label {
 .different-address {
   height: 0;
   overflow: hidden;
-  -webkit-transition: all ease-in-out 0.3s !important;
   transition: all ease-in-out 0.3s !important;
 }
 
@@ -1525,8 +1432,6 @@ section.checkout label {
 }
 
 .checkout-order-table .table-responsive .table tbody .variation {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
@@ -1549,7 +1454,6 @@ section.checkout label {
   padding: 1em;
   margin: 1em 0;
   font-size: .92em;
-  -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
   display: none;
 }
@@ -1592,7 +1496,6 @@ section.checkout label {
   padding: 5px 20px;
   border-radius: 5px;
   display: block;
-  -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
 }
 
@@ -1629,12 +1532,8 @@ section.checkout label {
 
 .customer-order {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .customer-order .customer-details {
@@ -1649,7 +1548,6 @@ section.checkout label {
   background-color: #D2A9AF;
   color: #FFfFFF;
   border: 2px solid #D2A9AF;
-  -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
 }
 
@@ -1724,8 +1622,7 @@ section.vendor-rgister .container .vendor-title {
 section.vendor-rgister .container .row .col-md-6 .form-wrapper {
   padding: 10px;
   width: 100%;
-  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
   border-radius: 2px;
 }
@@ -1740,8 +1637,7 @@ section.vendor-rgister .container .row .col-md-6 .form-wrapper .form-group .form
 }
 
 section.vendor-rgister .container .row .col-md-6 .form-wrapper .form-group .form-control:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   border: 1px solid #000;
 }
 
@@ -1790,6 +1686,94 @@ section.vendor-rgister .vendor-btn .vengor-regi-btn:hover {
 }
 
 /* -------- Vendor Registration CSS end  ------- */
+/* -------- Order details CSS start ------- */
+section.order-details {
+  width: 100%;
+  float: left;
+}
+
+section.order-details .container .row .col-12 .order-text-group {
+  display: flex;
+  width: 100%;
+}
+
+section.order-details .container .row .col-12 .order-text-group .left-section {
+  width: 48%;
+  text-align: right;
+  padding-right: 15px;
+}
+
+section.order-details .container .row .col-12 .order-text-group .right-section {
+  width: 48%;
+  float: left;
+  text-align: left;
+  padding-left: 15px;
+}
+
+section.order-details .container .row .col-12 .order-text-group .right-section .view-space {
+  float: left;
+  margin: 20px 0;
+  color: #C0809B;
+}
+
+section.order-details .container .row .col-12 .order-text-group .right-section .order-summery {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #D2A9AF;
+  padding: 10px 0;
+}
+
+section.order-details .container .row .col-12 .order-text-group .right-section .order-summery:last-child {
+  border-bottom: none;
+}
+
+section.order-details .container .row .col-12 .order-text-group .right-section .order-summery .order-price {
+  text-align: right;
+}
+
+section.order-details .container .click-here {
+  color: #C0809B;
+}
+
+@media (max-width: 576px) {
+  .order-text-group {
+    width: 100%;
+    display: block !important;
+    text-align: left !important;
+  }
+  .order-text-group .left-section, .order-text-group .right-section {
+    width: 100% !important;
+    float: left !important;
+    text-align: left !important;
+    padding: 0px !important;
+  }
+}
+
+@media screen and (min-width: 768px), screen and (max-width: 1024px) {
+  .right-section .order-summery {
+    display: flex;
+  }
+  .right-section .order-summery .order-info {
+    width: 60%;
+  }
+  .right-section .order-summery .order-price {
+    flex: 40%;
+  }
+}
+
+@media (min-width: 1140px) {
+  .right-section .order-summery {
+    display: flex;
+  }
+  .right-section .order-summery .order-info {
+    width: 70%;
+  }
+  .right-section .order-summery .order-price {
+    flex: 30%;
+  }
+}
+
+/* -------- Order details CSS end ------- */
 /* -------- ddd ------- */
 /* -------- ddd ------- */
 /* -------- ddd ------- */

@@ -1842,6 +1842,103 @@ section.forgot {
   }
 
 /* -------- Vendor Registration CSS end  ------- */
+
+/* -------- Order details CSS start ------- */
+section.order-details{
+  width: 100%;
+  float: left;
+  
+  .container{
+    .row{
+      .col-12{
+        
+        .order-text-group{
+          display: flex;
+          width: 100%;
+          .left-section{
+            width: 48%;
+            text-align: right;
+            padding-right: 15px;
+          }
+          .right-section{
+            width: 48%;
+            float: left;
+            text-align: left;
+            padding-left: 15px;
+            .view-space{
+              float: left;
+              margin: 20px 0;
+              color: $cartColor;
+            }
+            .order-summery{
+              display: flex;
+              justify-content: space-between;
+              border-bottom: 1px dashed $primaryColor;
+              padding: 10px 0;
+              &:last-child{
+                border-bottom: none;
+              }
+              .order-price{
+                text-align: right;
+              }
+            }
+          }
+        }
+      }
+    }
+    .click-here{
+      color: $cartColor;
+    }
+  }
+
+}
+@media(min-width:1100px){
+  section.order-details{
+    // height: calc(100vh - 300px);
+  }
+ 
+}
+@media(max-width:576px){
+  .order-text-group {
+    width: 100%;
+    display: block !important;
+    text-align: left !important;
+    .left-section, .right-section{
+      width: 100% !important;
+      float: left !important;
+      text-align: left !important;
+      padding: 0px !important;
+    }
+    
+  }
+}
+@media screen and (min-width:768px), screen and (max-width:1024px){
+  .right-section {
+    .order-summery{
+      display: flex;
+      .order-info{
+        width: 60%;
+      }
+      .order-price{
+        flex: 40%;
+      }
+    }
+  }
+}
+@media( min-width:1140px){
+  .right-section {
+    .order-summery{
+      display: flex;
+      .order-info{
+        width: 70%;
+      }
+      .order-price{
+        flex: 30%;
+      }
+    }
+  }
+}
+/* -------- Order details CSS end ------- */
 /* -------- ddd ------- */
 /* -------- ddd ------- */
 /* -------- ddd ------- */
