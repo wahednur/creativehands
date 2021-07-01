@@ -1939,6 +1939,84 @@ section.order-details{
   }
 }
 /* -------- Order details CSS end ------- */
+/* -------- Change password page CSS start ------- */
+section.change-password{
+  width: 100%;
+  float: left;
+  display: block;
+  .container{
+  width: 100% !important;
+  .pass_show{
+  position: relative
+  } 
+.form-control{
+  border: 1px solid $primaryColor;
+  &:focus{
+    box-shadow: none;
+    border: 1px solid $cartColor;
+    border-radius: 5px;
+  }
+
+  }
+  .pass_show .ptxt { 
+    position: absolute; 
+    top: 27%; 
+    right: 0px; 
+    z-index: 1; 
+    color: $whiteText;
+    background: $primaryColor;
+    border: 1px solid $primaryColor;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 3px 10px;
+
+    margin-top: -10px; 
+
+    cursor: pointer; 
+
+    transition: .3s ease all; 
+    &:hover{
+      background-color: $whiteText;
+      color: $primaryColor;
+    }
+
+  }
+  .change-password{
+    background: $primaryColor;
+    border-radius: 5px;
+    border: 1px solid $primaryColor;
+    color: $whiteText;
+    padding: 5px 20px;
+    margin: 10px auto;
+    width: 100%;
+    &:hover{
+      background: $whiteText;
+      color: $primaryColor;
+    }
+  } 
+}
+
+}
+@media(max-width:768px){
+  section.change-password{
+    .container{
+      width: 100% !important;
+      .form-control{
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media(min-width:1024px){
+  section.change-password{
+    height: calc(100vh - 400px);
+  }
+}
+
+
+// .pass_show .ptxt:hover{color: #333333;} 
+/* -------- Change password page CSS end ------- */
 /* -------- ddd ------- */
 /* -------- ddd ------- */
 /* -------- ddd ------- */

@@ -118,3 +118,4 @@ stcBtn.addEventListener('click', () => {
   codDiv.classList.remove('active');
   stcDiv.classList.add('active');
 })
+

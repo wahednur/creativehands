@@ -1774,6 +1774,83 @@ section.order-details .container .click-here {
 }
 
 /* -------- Order details CSS end ------- */
+/* -------- Change password page CSS start ------- */
+section.change-password {
+  width: 100%;
+  float: left;
+  display: block;
+}
+
+section.change-password .container {
+  width: 100% !important;
+}
+
+section.change-password .container .pass_show {
+  position: relative;
+}
+
+section.change-password .container .form-control {
+  border: 1px solid #D2A9AF;
+}
+
+section.change-password .container .form-control:focus {
+  box-shadow: none;
+  border: 1px solid #C0809B;
+  border-radius: 5px;
+}
+
+section.change-password .container .pass_show .ptxt {
+  position: absolute;
+  top: 27%;
+  right: 0px;
+  z-index: 1;
+  color: #FFfFFF;
+  background: #D2A9AF;
+  border: 1px solid #D2A9AF;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  padding: 3px 10px;
+  margin-top: -10px;
+  cursor: pointer;
+  transition: .3s ease all;
+}
+
+section.change-password .container .pass_show .ptxt:hover {
+  background-color: #FFfFFF;
+  color: #D2A9AF;
+}
+
+section.change-password .container .change-password {
+  background: #D2A9AF;
+  border-radius: 5px;
+  border: 1px solid #D2A9AF;
+  color: #FFfFFF;
+  padding: 5px 20px;
+  margin: 10px auto;
+  width: 100%;
+}
+
+section.change-password .container .change-password:hover {
+  background: #FFfFFF;
+  color: #D2A9AF;
+}
+
+@media (max-width: 768px) {
+  section.change-password .container {
+    width: 100% !important;
+  }
+  section.change-password .container .form-control {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  section.change-password {
+    height: calc(100vh - 400px);
+  }
+}
+
+/* -------- Change password page CSS end ------- */
 /* -------- ddd ------- */
 /* -------- ddd ------- */
 /* -------- ddd ------- */
