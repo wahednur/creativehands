@@ -1851,6 +1851,95 @@ section.change-password .container .change-password:hover {
 }
 
 /* -------- Change password page CSS end ------- */
+/* -------- Order tracking form page CSS start ------- */
+section.order-tracking {
+  float: left;
+  display: block;
+  width: 100%;
+}
+
+section.order-tracking .container {
+  width: 100% !important;
+}
+
+section.order-tracking .container .row .col-md-12 .order-tracking-form .track-btn {
+  background: #D2A9AF;
+  color: #FFfFFF;
+  border-radius: 5px;
+  border: 1px solid #D2A9AF;
+  padding: 5px 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+section.order-tracking .container .row .col-md-12 .order-tracking-form .track-btn:hover {
+  background: #FFfFFF;
+  color: #D2A9AF;
+}
+
+section.order-tracking .container .row .col-md-12 .order-tracking-form .form-control {
+  width: 100% !important;
+}
+
+@media (min-width: 1024px) {
+  section.order-tracking {
+    height: calc(100vh - 400px);
+  }
+}
+
+/* -------- Order tracking form page CSS end ------- */
+/* -------- Order tracking details page CSS start ------- */
+section.order-tracking-info {
+  width: 100%;
+  float: left;
+  display: block;
+}
+
+section.order-tracking-info .container {
+  width: 100% !important;
+}
+
+section.order-tracking-info .container .row .col-12 .odr-id, section.order-tracking-info .container .row .col-12 .odr-date, section.order-tracking-info .container .row .col-12 .odr-status {
+  background: #fcf8e3;
+  padding: 3px;
+}
+
+section.order-tracking-info .container .row .col-12 .table {
+  border: 1px solid #e2e2e2;
+}
+
+section.order-tracking-info .container .row .col-12 .table thead th {
+  border: 1px solid #e2e2e2;
+}
+
+section.order-tracking-info .container .row .col-12 .table td {
+  border: 1px solid #e2e2e2;
+  width: 50%;
+  color: #D2A9AF;
+}
+
+section.order-tracking-info .container .row .col-12 .table td .product-name {
+  float: left;
+  margin-right: 20px;
+}
+
+section.order-tracking-info .container .row .col-12 .table th {
+  color: #D2A9AF;
+}
+
+section.order-tracking-info .container .row .col-12 .billing-info {
+  display: flex;
+}
+
+section.order-tracking-info .container .row .col-12 .billing-info .billing {
+  width: 50%;
+}
+
+section.order-tracking-info .container .row .col-12 .billing-info .shipping {
+  padding-left: 15px;
+}
+
+/* -------- Order tracking details page CSS end ------- */
+/* -------- ddd ------- */
 /* -------- ddd ------- */
 /* -------- ddd ------- */
 /* -------- ddd ------- */

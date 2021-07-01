@@ -2014,9 +2014,92 @@ section.change-password{
   }
 }
 
-
-// .pass_show .ptxt:hover{color: #333333;} 
 /* -------- Change password page CSS end ------- */
+/* -------- Order tracking form page CSS start ------- */
+section.order-tracking{
+  float: left;
+  display: block;
+  width: 100%;
+
+  .container{
+    width: 100% !important;
+    .row{
+      .col-md-12{
+        .order-tracking-form{
+          .track-btn{
+            background: $primaryColor;
+            color: $whiteText;
+            border-radius: 5px;
+            border: 1px solid $primaryColor;
+            padding: 5px 30px;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+              background: $whiteText;
+              color: $primaryColor;
+              
+            }
+          }
+          .form-control{
+            width: 100% !important;
+          }
+        }
+      }
+    }
+  }
+}
+@media(min-width:1024px){
+  section.order-tracking{
+    height: calc(100vh - 400px);
+  }
+}
+/* -------- Order tracking form page CSS end ------- */
+/* -------- Order tracking details page CSS start ------- */
+section.order-tracking-info{
+  width: 100%;
+  float: left;
+  display: block;
+  .container{
+    width: 100% !important;
+    .row{
+      .col-12{
+        .odr-id, .odr-date, .odr-status{
+          background: #fcf8e3;
+          padding: 3px;
+        }
+        .table{
+          border: 1px solid #e2e2e2;
+          thead th{
+            border: 1px solid #e2e2e2;
+          }
+          td{
+            border: 1px solid #e2e2e2;
+            width: 50%;
+            .product-name{
+              float: left;
+              margin-right: 20px;
+            }
+            color: $primaryColor;
+          }
+          th{
+            color: $primaryColor;
+          }
+          
+        }
+        .billing-info{
+          display: flex;
+          .billing{
+            width: 50%;
+          }
+          .shipping{
+            padding-left: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+/* -------- Order tracking details page CSS end ------- */
+/* -------- ddd ------- */
 /* -------- ddd ------- */
 /* -------- ddd ------- */
 /* -------- ddd ------- */
